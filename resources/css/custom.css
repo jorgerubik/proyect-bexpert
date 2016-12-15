@@ -11,6 +11,7 @@ html, body                  { height: 100%; }
 .color-naranja              { color: #FBBB4B !important; }
 .color-blanco               { color: white !important; }
 .color-gris		 { color: #BFBFBF !important; }
+.color-negro               { color: black !important; }
 .icon-input                 { cursor: text; }
 textarea:focus, input:focus { outline: none; }
 .form-control {

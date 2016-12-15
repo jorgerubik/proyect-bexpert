@@ -25,6 +25,13 @@ $(document).ready(function() {
 			/*Star rating*/
             $('#rate-product').barrating({
                 theme: 'fontawesome-stars-o',
-                initialRating: 4.5
+                initialRating: 4
             });
+            for (var i = 1; i <= 3; i++) {
+			    $("#rate-product-in"+i).barrating({
+			    theme: 'fontawesome-stars-o',
+			    initialRating: 4,
+			    readonly: true
+			    });
+			  }
 		});
