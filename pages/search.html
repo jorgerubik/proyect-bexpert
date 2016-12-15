@@ -13,11 +13,13 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" type="text/css" href="../resources/css/custom.css">
   <link rel="stylesheet" type="text/css" href="../resources/css/fontawesome-stars-o.css">
+  <link rel="stylesheet" type="text/css" href="../resources/css/jquery.timepicker.min.css">
   <!-- <script src="js/modernizr.js"></script> -->
 
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="../resources/js/jquery.timepicker.min.js"></script>
 <script src="../resources/js/jquery.barrating.min.js"></script>
 </head>
 <body>
@@ -57,6 +59,7 @@
         <ul class="nav nav-stacked">
           <li><a href="#">general</a></li>
           <li><a href="#">contratante</a></li>
+          <li><a href="#">prestador</a></li>
           <li><a href="#">contacto</a></li>
         </ul>
 
@@ -149,26 +152,62 @@
             </div>
             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body">
-                <div class="col-sm-4 text-center circlef-container">
-                  <div class="circle-filter">
-                    <div class="opaciter"></div>
-                    <img src="../resources/img/search-circle/01.jpg" alt="">
+                <div class="col-sm-12">
+                  <div class="row">
+                    <!--Circles-container-->
+                    <div class="circles-container">
+                      <div class="col-sm-4 text-center circlef-container">
+                        <div class="circle-filter">
+                          <div class="opaciter"></div>
+                          <img src="../resources/img/search-circle/01.jpg" alt="">
+                        </div>
+                        <label>Artistas</label>
+                      </div>
+                      <div class="col-sm-4 text-center circlef-container">
+                        <div class="circle-filter">
+                          <div class="opaciter"></div>
+                          <img src="../resources/img/search-circle/02.jpg" alt="">
+                        </div>
+                        <label>Accesorios</label>
+                      </div>
+                      <div class="col-sm-4 text-center circlef-container">
+                        <div class="circle-filter">
+                          <div class="opaciter"></div>
+                          <img src="../resources/img/search-circle/03.jpg" alt="">
+                        </div>
+                        <label>Miscelaneos</label>
+                      </div>
+                    </div>
+                    <!--Fin Circles-container-->
                   </div>
-                  <label>Artistas</label>
-                </div>
-                <div class="col-sm-4 text-center circlef-container">
-                  <div class="circle-filter">
-                    <div class="opaciter"></div>
-                    <img src="../resources/img/search-circle/02.jpg" alt="">
+                  <div class="form-group margin-top50">
+                    <div class="row">
+                      <div class="col-sm-6 col-sm-offset-3">
+                        <select name="" id="" class="form-control">
+                          <option value="" disabled selected>Categoría</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                        </select>
+                        <span class="icon-input select-icon">
+                          <i class="fa fa-angle-up"></i>
+                          <i class="fa fa-angle-down"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="row margin-top10">
+                      <div class="col-sm-6 col-sm-offset-3">
+                        <select name="" id="" class="form-control">
+                          <option value="" disabled selected>Subcategoría</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                        </select>
+                        <span class="icon-input select-icon">
+                          <i class="fa fa-angle-up"></i>
+                          <i class="fa fa-angle-down"></i>
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                  <label>Accesorios</label>
-                </div>
-                <div class="col-sm-4 text-center circlef-container">
-                  <div class="circle-filter">
-                    <div class="opaciter"></div>
-                    <img src="../resources/img/search-circle/03.jpg" alt="">
-                  </div>
-                  <label>Miscelaneos</label>
                 </div>
               </div>
             </div>
@@ -183,6 +222,73 @@
             </div>
             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
               <div class="panel-body">
+                <div class="col-sm-12">
+                  <div class="row margin-bottom15sm-media">
+                    <div class="col-md-4">
+                      <div class="form-group dater">
+                        <input type="text" id="fecha-evento" class="form-control" placeholder="*Fecha de tu evento">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group">
+                      <div class="col-md-4">
+                        <input type="text" class="form-control hora-inicio timepicker" placeholder="Hora inicio:">
+                      </div>
+                      <div class="col-md-4 margin-top15sm-media">
+                        <select name="" id="" class="form-control">
+                          <option value="" disabled selected>*Horas</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                        </select>
+                        <span class="icon-input select-icon">
+                          <i class="fa fa-angle-up"></i>
+                          <i class="fa fa-angle-down"></i>
+                        </span>
+                      </div>
+                      <div class="col-md-4 margin-top15sm-media">
+                        <select name="" id="" class="form-control">
+                          <option value="" disabled selected>*Minutos</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                        </select>
+                        <span class="icon-input select-icon">
+                          <i class="fa fa-angle-up"></i>
+                          <i class="fa fa-angle-down"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row margin-top15">
+                    <div class="form-group">
+                      <div class="col-md-4">
+                        <input type="text" class="form-control hora-fin timepicker" placeholder="Hora fin:">
+                      </div>
+                      <div class="col-md-4 margin-top15sm-media">
+                        <select name="" id="" class="form-control">
+                          <option value="" disabled selected>*Horas</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                        </select>
+                        <span class="icon-input select-icon">
+                          <i class="fa fa-angle-up"></i>
+                          <i class="fa fa-angle-down"></i>
+                        </span>
+                      </div>
+                      <div class="col-md-4 margin-top15sm-media">
+                        <select name="" id="" class="form-control">
+                          <option value="" disabled selected>*Minutos</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                        </select>
+                        <span class="icon-input select-icon">
+                          <i class="fa fa-angle-up"></i>
+                          <i class="fa fa-angle-down"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -196,6 +302,54 @@
             </div>
             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
               <div class="panel-body">
+                <div class="col-sm-12">
+                  <div class="row">
+                    <div class="col-sm-2">
+                      <div class="form-group">
+                        <select name="" id="" class="form-control">
+                          <option value="" disabled selected>Min</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                        </select>
+                        <span class="icon-input select-icon">
+                          <i class="fa fa-angle-up"></i>
+                          <i class="fa fa-angle-down"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="form-group">
+                        <select name="" id="" class="form-control">
+                          <option value="" disabled selected>Max</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                        </select>
+                        <span class="icon-input select-icon">
+                          <i class="fa fa-angle-up"></i>
+                          <i class="fa fa-angle-down"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <select name="" id="" class="form-control">
+                          <option value="" disabled selected>Tipo de servicio</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                        </select>
+                        <span class="icon-input select-icon">
+                          <i class="fa fa-angle-up"></i>
+                          <i class="fa fa-angle-down"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <button class="btn btn-primary btn-search">BUSCAR</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -295,6 +449,19 @@
 
 <script>
   $(".icon-input").click(function(){ $(this).prev().focus(); });
+  $("#fecha-evento").datepicker({
+    timeFormat: 'h:mm',
+    interval: 30,
+    minTime: '01:00am',
+    maxTime: '11:00pm',
+    defaultTime: '12',
+    startTime: '10:00',
+    dynamic: true,
+    dropdown: true,
+    scrollbar: true
+  });
+  $('.hora-inicio.timepicker').timepicker({});
+  $('.hora-fin.timepicker').timepicker({});
   $( function() {
     $( "#slider-range" ).slider({
       range: true,
@@ -323,11 +490,20 @@
   }
   /* Fin Rating */
 
-  $(".circle-filter").click(function(){
-    if($(this).find(".opaciter").attr("class")=="opaciter active")
-      $(this).find(".opaciter").attr("class","opaciter");
-    $(this).find(".opaciter").addClass("active");
+  /* Efecto circle-filter */
+  $(".circlef-container label").click(function(){
+    $(this).prev().trigger("click");
   });
+  $(".circle-filter").click(function(){
+    if($(this).find(".opaciter").attr("class")=="opaciter active") {
+      $(this).find(".opaciter").attr("class","opaciter");
+      $(this).next().attr("class","");
+      return;
+    }
+    $(this).find(".opaciter").addClass("active");
+    $(this).next().addClass("active");
+  });
+  /* Fin Efecto circle-filter */
 
 </script>
 </body>
