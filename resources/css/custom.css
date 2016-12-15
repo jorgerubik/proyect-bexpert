@@ -12,6 +12,7 @@ body {
 .color-verde     { color: #9ACB50 !important; }
 .color-naranja   { color: #FBBB4B !important; }
 .color-blanco    { color: white !important; }
+.color-gris		 { color: #BFBFBF !important; }
 .icon-input { cursor: text; }
 textarea:focus, input:focus{ outline: none; }
 /**************************************
@@ -286,3 +287,71 @@ medias
 	}
 	.prod-search img { padding: 0; }
 }
+/**************************************
+Details
+**************************************/
+.detail{
+	border-top: 1px solid #EAEAEA;
+}
+.btn-add, .btn-remove{
+	width: 40px;
+	height: 40px;
+	border: 0;
+	background-color: transparent;
+	color: #BFBFBF;
+	text-align: center;
+	padding: 5px;
+	font-size: 20px;
+}
+.prod-number {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #EAF4F9;
+    color: black;
+    background-color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+ } 
+ .btn-addcar{
+ 	background-color: #00469A;
+ 	border-radius: 20px;
+ 	color: white;
+ } 
+ .btn-addcar:hover{
+ 	background-color: white;
+ 	border: solid 1px #00469A;
+ 	border-radius: 20px;
+ 	color: #00469A;
+ }  
+ .img-social{
+ 	width: 30px;
+ 	height: 30px;
+ }
+ .comments, .cancellation{
+ 	border: solid 3px #EAF4F9;
+ 	padding-left: 10px;
+ }
+ .cancellation{
+ 	height: 100px;
+ 	overflow-y:scroll;
+ }
+ #carousel-bottom > .carousel-control{
+	background-image: none !important;
+ }
+ #carousel-bottom > .carousel-control > .glyphicon-chevron-left{
+	background-color: #1893CC;
+	border-radius: 100%;
+	width: 40px;
+	height: 40px;
+	padding-top: 3px;
+	left: 0% !important;
+ }
+ #carousel-bottom > .carousel-control > .glyphicon-chevron-right{
+	background-color: #1893CC;
+	border-radius: 100%;
+	width: 40px;
+	height: 40px;
+	padding-top: 3px;
+	right: 0% !important;
+ }
