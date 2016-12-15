@@ -141,7 +141,7 @@
       <aside class="col-md-9">
 
         <!-- Acordeon -->
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel-group acordeon-search" id="accordion" role="tablist" aria-multiselectable="true">
           <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingOne">
               <h4 class="panel-title">
@@ -357,8 +357,10 @@
         <!-- Fin Acordeón -->
 
         <!-- Products -->
-          <div class="col-sm-4 text-center prod-search">
-            <img src="../resources/img/prod-search/mariachi.png" alt="producto">
+          <div class="col-sm-3 col-sm-offset-1 nopadding-left-right text-center prod-search">
+            <div class="prod-img-container">
+              <img src="../resources/img/prod-search/01.jpg" alt="producto">
+            </div>
             <div class="prod-caption">
 
               <!-- Bar Rating -->
@@ -377,8 +379,10 @@
               <div class="prod-price"> $ 3,199.00 </div>
             </div>
           </div>
-          <div class="col-sm-4 text-center prod-search">
-            <img src="../resources/img/prod-search/flores.png" alt="producto">
+          <div class="col-sm-3 col-sm-offset-1 nopadding-left-right text-center prod-search">
+            <div class="prod-img-container">
+              <img src="../resources/img/prod-search/02.jpg" alt="producto">
+            </div>
             <div class="prod-caption">
 
               <!-- Bar Rating -->
@@ -398,12 +402,82 @@
               <div class="prod-price"> $ 3,199.00 </div>
             </div>
           </div>
-          <div class="col-sm-4 text-center prod-search">
-            <img src="../resources/img/prod-search/jardines.png" alt="producto">
+          <div class="col-sm-3 col-sm-offset-1 nopadding-left-right text-center prod-search">
+            <div class="prod-img-container">
+              <img src="../resources/img/prod-search/03.jpg" alt="producto">
+            </div>
             <div class="prod-caption">
 
               <!-- Bar Rating -->
               <select id="rate-product-in3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <!-- Fin Bar Rating -->
+
+              <div class="prod-name text-uppercase">jardines</div>
+
+
+              <div class="prod-description"> Vivamus in luctus velit, et consequat augue. Aliquam erat volupat... </div>
+              <div class="prod-price"> $ 3,199.00 </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-sm-offset-1 nopadding-left-right text-center prod-search">
+            <div class="prod-img-container">
+              <img src="../resources/img/prod-search/01.jpg" alt="producto">
+            </div>
+            <div class="prod-caption">
+
+              <!-- Bar Rating -->
+              <select id="rate-product-in4">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <!-- Fin Bar Rating -->
+
+              <div class="prod-name text-uppercase">Mariachi México</div>
+
+              <div class="prod-description"> Vivamus in luctus velit, et consequat augue. Aliquam erat volupat... </div>
+              <div class="prod-price"> $ 3,199.00 </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-sm-offset-1 nopadding-left-right text-center prod-search">
+            <div class="prod-img-container">
+              <img src="../resources/img/prod-search/02.jpg" alt="producto">
+            </div>
+            <div class="prod-caption">
+
+              <!-- Bar Rating -->
+              <select id="rate-product-in5">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <!-- Fin Bar Rating -->
+
+              <div class="prod-name text-uppercase">flores</div>
+
+
+              <div class="prod-description"> Vivamus in luctus velit, et consequat augue. Aliquam erat volupat... </div>
+              <div class="prod-price"> $ 3,199.00 </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-sm-offset-1 nopadding-left-right text-center prod-search">
+            <div class="prod-img-container">
+              <img src="../resources/img/prod-search/03.jpg" alt="producto">
+            </div>
+            <div class="prod-caption">
+
+              <!-- Bar Rating -->
+              <select id="rate-product-in6">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -462,6 +536,10 @@
   });
   $('.hora-inicio.timepicker').timepicker({});
   $('.hora-fin.timepicker').timepicker({});
+  $(".prod-img-container").css("height",$(".prod-img-container").css("width"));
+  $(window).resize(function() {
+    $(".prod-img-container").css("height",$(".prod-img-container").css("width"));
+  });
   $( function() {
     $( "#slider-range" ).slider({
       range: true,
@@ -481,7 +559,7 @@
     theme: 'fontawesome-stars-o',
     initialRating: 1
   });
-  for (var i = 1; i <= 3; i++) {
+  for (var i = 1; i <= 6; i++) {
     $("#rate-product-in"+i).barrating({
     theme: 'fontawesome-stars-o',
     initialRating: 3,
