@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>B-Expert</title>
+  <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" type="text/css" href="css/canvas.css"> -->
+   <!-- Font Awesome -->
+  <link rel="stylesheet" href="../resources/css/font-awesome/css/font-awesome.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="../resources/css/custom.css">
+  <link rel="stylesheet" type="text/css" href="../resources/css/fontawesome-stars-o.css">
+  <link rel="stylesheet" type="text/css" href="../resources/css/jquery.timepicker.min.css">
+  <!-- <script src="js/modernizr.js"></script> -->
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="../resources/js/jquery.timepicker.min.js"></script>
+<script src="../resources/js/jquery.barrating.min.js"></script>
+</head>
+<body>
+<!-- Header -->
+<div class="container-fluid">
+  <div class="row margin-top10">
+    <div class="col-md-3">
+      <img src="../resources/img/logo.svg">
+    </div>
+    <div class="col-md-4 col-md-offset-5 text-right">
+      <a href="#" class="btn">AYUDA</a>
+      <span>|</span>
+      <a href="#" class="btn">
+        HOLA, ISAC ROJO
+        <i class="fa fa-angle-down"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- Fin Header -->
+<div class="main-panel">
+<div class="container-fluid">
+  <div class="col-md-12">
+    <div class="row">
+      <!-- aside-left -->
+      <aside class="col-md-3 provider-left">
+
+        <!--Circle-container-->
+        <div class="circles-container">
+          <div class="col-sm-12 circlef-container">
+            <div class="circle-filter">
+              <div class="opaciter"></div>
+              <img src="../resources/img/search-circle/01.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <!--Fin Circle-container-->
+
+        <div class="row name-provider">
+          <h4>nombre</h4>
+          <h5>grupo galante</h5>
+          <span class="fa-stack fa-lg facebook-icon">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+          </span>
+          <span class="fa-stack fa-lg youtube-icon">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <div class="row service-provider">
+          <h4>tipo de servicio</h4>
+          <h5>versatil</h5>
+        </div>
+        <div class="row price-provider">
+          <h4>tarifa por hora</h4>
+          <h5>$ 500 MXN</h5>
+        </div>
+        <div class="row menu-provider">
+          <ul class="nav nav-stacked nav-provider">
+            <li><a href="#">contratar</a></li>
+            <li><a href="#">repertorio</a></li>
+            <li><a href="#">política de cancelación</a></li>
+          </ul>
+        </div>
+        <div class="row back-provider">
+          <span>
+            <span class="fa-stack fa-lg icon">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-angle-left fa-stack-1x fa-inverse"></i>
+            </span>
+            <span class="back">regresar</span>
+          </span>
+        </div>
+
+      </aside>
+      <!-- Fin aside-left -->
+
+      <!-- aside-right -->
+      <aside class="col-md-9 top-border">
+
+        <!-- Carousel -->
+        <div class="row carousel-provider-container">
+          <div id="carousel-provider" class="carousel slide" data-ride="carousel">
+            <!-- Indicators
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-provider" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-provider" data-slide-to="1"></li>
+              <li data-target="#carousel-provider" data-slide-to="2"></li>
+            </ol>
+            -->
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner provider-carousel-img" role="listbox">
+              <div class="item active">
+                <img src="../resources/img/provider-profile/car-1.jpg" alt="">
+              </div>
+              <div class="item">
+                <img src="../resources/img/provider-profile/car-2.jpg" alt="">
+              </div>
+              <div class="item">
+                <img src="../resources/img/provider-profile/car-3.jpg" alt="">
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-provider" role="button" data-slide="prev">
+              <span class="fa-stack fa-lg icon">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-angle-left fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-provider" role="button" data-slide="next">
+              <span class="fa-stack fa-lg icon">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-angle-right fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <!-- Fin Carousel -->
+
+        <div class="row">
+
+          <!-- Descriptions -->
+          <div class="col-sm-8 caract-servicio-container">
+            <div class="row features-service-title">
+              <h2>características del servicio</h2>
+            </div>
+            <div class="row subtitle">
+              <h3>descripción del servicio</h3>
+            </div>
+            <div class="row description">
+              <p>Prueba</p>
+            </div>
+            <div class="row subtitle">
+              <h3>descripción del servicio</h3>
+            </div>
+            <div class="row description">
+              <p>Prueba</p>
+            </div>
+            <div class="row subtitle">
+              <h3>prerequisitos de contratación</h3>
+            </div>
+            <div class="row description">
+              <p>Prueba</p>
+            </div>
+          </div>
+          <!-- Fin Descriptions -->
+
+          <!-- Ratings -->
+          <div class="col-sm-4 rating-zone">
+            <div class="row title-rating">
+              <h3>calificación público</h3>
+            </div>
+            <div class="row rate-container">
+              <select class="rate-service">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="row title-rating">
+              <h3>calificación contratantes</h3>
+            </div>
+            <div class="row rate-container">
+              <select class="rate-service">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="row comments-service">
+              <h4>comentarios sobre el profesional</h4>
+              <p>SIN COMENTARIOS</p>
+            </div>
+          </div>
+          <!-- Fin Ratings -->
+
+        </div>
+
+      </aside>
+      <!-- Fin aside-right -->
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Footer -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <img src="../resources/img/logo.svg">
+    </div>
+    <div class="col-md-3 right-vline text-center">
+      <a class="links-footer" href="#"><h3>derechos reservados</h3></a>
+    </div>
+    <div class="col-md-3 right-vline text-center">
+      <a class="links-footer" href="#"><h3>terminos y condiciones</h3></a>
+    </div>
+    <div class="col-md-3 text-center">
+      <a class="links-footer" href="#"><h3>mapa de sitio</h3></a>
+    </div>
+  </div>
+</div>
+<!-- Fin Footer -->
+
+<script>
+  $('.rate-service').barrating({
+    theme: 'fontawesome-stars-o',
+    initialRating: 3,
+    readonly: true
+  });
+</script>
+</body>
+</html>
