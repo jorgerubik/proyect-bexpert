@@ -40,6 +40,7 @@ select::-ms-expand { display: none; }
 .ui-datepicker th { background: #e6f2ff; }
 .ui-datepicker table { background: white; }
 .acordeon-search { border-top: 2px solid #e6e6e6; }
+.nopadding-left { padding-left: 0 !important; }
 .nopadding-left-right { padding-left: 0 !important; padding-right: 0 !important; }
 .top-border { border-top: 2px solid #e6e6e6; }
 .facebook-icon { color: #3c5a99; cursor: pointer; }
@@ -73,7 +74,7 @@ Slider
   -o-background-size      : cover;
 }
 .carousel-caption { bottom: 45%; }
-.text-slider { font-size: 45px; }
+.text-slider      { font-size: 45px; }
 /*
 Bottom-a
 */
@@ -513,6 +514,77 @@ Contractor
  	background-color: white !important;
  	border: solid 1px #E4E4E4 !important;
  }
+ /**************************************
+Cart
+**************************************/
+.title-contract h2 {
+	text-transform : uppercase;
+	color          : #428bca;
+	font-size      : 18px;
+	margin         : 25px 0;
+}
+.concept h3 {
+	text-transform : uppercase;
+	color          : #428bca;
+	font-size      : 14px;
+	margin         : 7px 0;
+}
+.description-concept p {
+	text-transform : uppercase;
+	color          : #dfdfdf;
+	font-size      : 20px;
+	margin         : 0;
+}
+.total-zone { background-color: #e6f2ff; }
+.total-zone h2 {
+	text-transform : uppercase;
+	color          : #428bca;
+	font-size      : 18px;
+	margin         : 10px 0;
+}
+.total-zone p {
+	text-transform : uppercase;
+	color          : #181818;
+	font-size      : 18px;
+	margin         : 5px 0 0 0;
+	font-weight    : bold;
+}
+.payment { padding: 20px; }
+.payment h2 {
+	text-transform : uppercase;
+	color          : #181818;
+	font-size      : 18px;
+	margin         : 5px 0 0 0;
+	font-weight    : normal;
+}
+.payment-collapse-container .panel-default>.panel-heading {
+  color            : #181818;
+  background-color : #dfdfdf;
+  border-color     : #dfdfdf;
+}
+.title-detail-payment { padding-left: 15px; }
+.title-detail-payment h3 {
+	margin: 0;
+  text-transform: uppercase;
+  color: #dfdfdf;
+  font-size: 16px;
+}
+.charge-balance { margin: 15px 0; text-align: center; }
+.title-cb { text-transform: uppercase; color: #428bca; }
+.amount-total { font-weight: bold; }
+.exception-total { color: #c5c5c5; text-transform: uppercase; font-size: 11px; }
+button.pay-button {
+	color: #fff;
+  background-color: #61dc17;
+  border-color: #61dc17;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 30px;
+ }
+ button.pay-button:hover {
+	background-color: #58bd1b;
+  border-color: #58bd1b;
+ }
 /**************************************
 medias
 **************************************/
@@ -547,6 +619,9 @@ medias
 		width      : 33.33333333%;
 	}
 	.prod-search { box-shadow : 0 0 0 #b3b3b3; }
+	.shopping-all-container * { text-align: center; }
+	.amount-total, .exception-total { display: block; }
+	.panel-title { text-align: left; }
 }
 @media(max-width: 650px) {
 	[class="col-sm-4 text-center prod-search"],
