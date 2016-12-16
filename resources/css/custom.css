@@ -11,7 +11,6 @@ html, body                  { height: 100%; }
 .color-naranja              { color: #FBBB4B !important; }
 .color-blanco               { color: white !important; }
 .color-gris		 { color: #BFBFBF !important; }
-.color-negro               { color: black !important; }
 .icon-input                 { cursor: text; }
 textarea:focus, input:focus { outline: none; }
 .form-control {
@@ -399,13 +398,18 @@ Provider-profile
 .rating-zone h3, .rating-zone h4 { margin: 0; text-transform: uppercase; }
 .rating-zone { padding-left: 35px; color: #428bca; margin-top: 30px; }
 .rating-zone h3 { font-size: 16px; font-weight: normal; }
-.rating-zone h4 { font-size: 13px; font-weight: normal; }
-.rating-zone p 																					{ font-size: 12px;  }
+.rating-zone h4 { font-size: 12px; font-weight: 400; }
+.rating-zone p 	{ font-size: 11px; font-weight: 300; }
 .rating-zone .br-theme-fontawesome-stars-o .br-widget 	{ margin-left: 0px; }
 .title-rating                                           { margin-top: 25px; }
 .rate-container                                         { margin-top: 10px; }
 .rating-zone .br-theme-fontawesome-stars-o .br-widget a { font-size: 25px;  }
-.comments-service { margin-top: 25px; }
+.comments-service {
+	margin-top : 25px;
+	padding    : 5px;
+	border     : 2px solid #e5f3ff;
+	min-height : 112px;
+}
 /**************************************
 Details
 **************************************/
@@ -474,7 +478,6 @@ Details
 	padding-top: 3px;
 	right: 0% !important;
  }
-<<<<<<< HEAD
 /**************************************
 medias
 **************************************/
@@ -526,40 +529,3 @@ medias
 	}
 	.prod-search img { padding: 0; }
 }
-=======
- /*************************************
-Contractor
- *************************************/
- .btn-gray{
- 	color: white;
- 	background-color: #BFBFBF;
- 	border-radius: 20px;
- 	padding: 10px 15px;
- }
- .btn-contractor{
- 	background-color: #00469A;
- 	border-radius: 20px;
- 	color: white;
- 	padding: 7px 35px;
- }
- .btn-contractor:hover{
- 	background-color: white;
- 	border: solid 1px #00469A;
- 	color: #00469A;
- }
- .btn-contractor2{
-	background-color: #0098D1;
- 	border-radius: 20px;
- 	color: white;
- 	padding: 7px 35px;
- }
- .btn-contractor2:hover{
- 	background-color: white;
- 	border: solid 1px #0098D1;
- 	color: #0098D1;
- }
- .form-contractor{
- 	background-color: white !important;
- 	border: solid 1px #E4E4E4 !important;
- }
->>>>>>> 96f413dd47d2676e1a2e65247387b81e9156d6d4
