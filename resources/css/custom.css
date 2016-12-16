@@ -478,6 +478,41 @@ Details
 	padding-top: 3px;
 	right: 0% !important;
  }
+  /*************************************
+Contractor
+ *************************************/
+ .btn-gray{
+ 	color: white;
+ 	background-color: #BFBFBF;
+ 	border-radius: 20px;
+ 	padding: 10px 15px;
+ }
+ .btn-contractor{
+ 	background-color: #00469A;
+ 	border-radius: 20px;
+ 	color: white;
+ 	padding: 7px 35px;
+ }
+ .btn-contractor:hover{
+ 	background-color: white;
+ 	border: solid 1px #00469A;
+ 	color: #00469A;
+ }
+ .btn-contractor2{
+	background-color: #0098D1;
+ 	border-radius: 20px;
+ 	color: white;
+ 	padding: 7px 35px;
+ }
+ .btn-contractor2:hover{
+ 	background-color: white;
+ 	border: solid 1px #0098D1;
+ 	color: #0098D1;
+ }
+ .form-contractor{
+ 	background-color: white !important;
+ 	border: solid 1px #E4E4E4 !important;
+ }
 /**************************************
 medias
 **************************************/
