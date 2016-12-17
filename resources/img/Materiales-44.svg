@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+<symbol  id="Nuevo_símbolo_2" viewBox="-108.313 -108.313 216.626 216.627">
+	<g id="Nuevo_símbolo_1_1_">
+		<path fill="none" stroke="#0085C6" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="12" d="M107.313,0
+			c0-59.269-48.044-107.313-107.312-107.313S-107.313-59.269-107.313,0c0,59.267,48.045,107.313,107.313,107.313
+			S107.313,59.267,107.313,0z"/>
+		<path fill="none" stroke="#000C49" stroke-width="3.0882" stroke-miterlimit="10" d="M34.082-10.199v47.104
+			c0,0-2.264,17-19.219,16.958c0,0-9.268,0.935-15.186-6.222"/>
+		<polygon fill="none" stroke="#000C49" stroke-width="3.0882" stroke-miterlimit="10" points="20.705,14.841 20.838,-10.205 
+			-0.783,-22.838 -22.539,-10.434 -22.668,14.612 -1.05,27.246 		"/>
+		<path fill="none" stroke="#000C49" stroke-width="3.0882" stroke-miterlimit="10" d="M7.616-33.551L47.784-8.944
+			c0,0,13.311,10.803,4.42,25.245c0,0-4.038,8.387-13.233,9.699"/>
+		<path fill="none" stroke="#000C49" stroke-width="3.0882" stroke-miterlimit="10" d="M-28.676-19.635l39.091-26.286
+			c0,0,15.366-7.606,24.795,6.487c0,0,5.95,7.169,3.31,16.068"/>
+		<path fill="none" stroke="#000C49" stroke-width="3.0882" stroke-miterlimit="10" d="M-35.22,14.971l0.108-47.104
+			c0,0,2.303-16.991,19.259-16.913c0,0,9.268-0.917,15.172,6.255"/>
+		<path fill="none" stroke="#000C49" stroke-width="3.0882" stroke-miterlimit="10" d="M-6.825,40.527l-40.653-23.792
+			c0,0-13.523-10.537-4.926-25.155c0,0,3.872-8.472,13.04-9.958"/>
+		<path fill="none" stroke="#000C49" stroke-width="3.0882" stroke-miterlimit="10" d="M27.495,25.327l-40.383,24.25
+			c0,0-15.733,6.807-24.431-7.745c0,0-5.576-7.461-2.485-16.222"/>
+	</g>
+</symbol>
+<g id="Nuevo_símbolo">
+	
+		<use xlink:href="#Nuevo_símbolo_2"  width="216.626" height="216.627" id="XMLID_4_" x="-108.313" y="-108.313" transform="matrix(0.8794 0 0 -0.8794 100 100)" overflow="visible"/>
+</g>
+</svg>
