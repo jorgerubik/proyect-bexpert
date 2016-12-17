@@ -5,10 +5,13 @@ html, body                  { height: 100%; }
 .margin-top10               { margin-top: 10px; }
 .margin-top15               { margin-top: 15px; }
 .margin-top50               { margin-top: 50px; }
+.margin-top75               { margin-top: 75px; }
+.margin-top100              { margin-top: 100px; }
 .margin-bottom50            { margin-bottom: 50px; }
-.color-azul                 { color: #2DB8E6 !important; }
-.color-verde                { color: #9ACB50 !important; }
-.color-naranja              { color: #FBBB4B !important; }
+.margin-bottom75            { margin-bottom: 75px; }
+.color-azul                 { color: #0071ba !important; }
+.color-verde                { color: #8ac43f !important; }
+.color-naranja              { color: #f9ae3b !important; }
 .color-blanco               { color: white !important; }
 .color-gris		 { color: #BFBFBF !important; }
 .icon-input                 { cursor: text; }
@@ -35,7 +38,7 @@ select::-ms-expand { display: none; }
 	color     : #808090;
 	cursor    : default;
 }
-.logo{ height: 60px; width: auto; }
+.logo { height: 60px; width: auto; margin: auto; display: block; }
 .select-icon i          { display: block; }
 .ui-timepicker-standard { height: 212px !important; }
 .ui-datepicker th { background: #e6f2ff; }
@@ -49,17 +52,74 @@ select::-ms-expand { display: none; }
 /**************************************
 Header
 **************************************/
+.header-button-container { height: 60px; }
+.header-button-vmiddler {
+  position          : absolute;
+  width             : 100%;
+  top               : 50%;
+  left              : 0;
+  -ms-transform     : translate (0,-50%);
+  -webkit-transform : translate (0,-50%);
+  -moz-transform    : translate (0,-50%);
+  -o-transform      : translate (0,-50%);
+  transform         : translate(0,-50%);
+ }
+.header-container { padding: 20px 0; }
 .btn-header {
-	background-color : #002476;
-	border-radius    : 20px;
-	color            : white;
-	padding          : 10px 15px;
+  background-color : #002476;
+  border-radius    : 20px;
+  color            : white;
+  padding          : 10px 15px;
+  width            : 100%;
 }
 .btn-header:hover {
 	background-color : white;
 	color            : #002476;
 	border           : solid 1px #002476;
 }
+.btn-header:focus {
+	outline: none;
+  color: white;
+}
+.btn-header:hover:active:focus { outline: none; color: #002476; }
+.btn-header:focus:active { outline: none; }
+.btn-header:focus:hover { color: #002476; }
+/**************************************
+Modal
+**************************************/
+.home-modal .modal-body { position: relative; padding: 10px; }
+.modal-marginer {
+	margin  : 0 0;
+	border  : 1px solid #dbdbdb;
+	padding : 35px 40px 20px 40px;
+}
+.modal-left-container h3  { margin: 45px 0 30px 0; }
+.modal-right-container h3 { margin: 20px 0 30px 0; }
+.main-modal input[type="text"], .main-modal input[type="password"] {
+	background : white;
+	color      : #9e9e9e;
+	border     : 1px solid #e4e4e4;
+ }
+
+.home-carousel .carousel-control i, .home-carousel .carousel-control
+i, .home-carousel .carousel-control .icon-next, .home-carousel .carousel-control
+.icon-prev {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate (0,-50%);
+  -webkit-transform: translate (0,-50%);
+  -moz-transform: translate (0,-50%);
+  -o-transform: translate (0,-50%);
+  transform: translate(0,-50%);
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px;
+  color: white;
+  font-size: 55px;
+}
+.home-carousel .carousel-control.right i { right: 15px; }
+.home-carousel .carousel-control.left i  { left: 15px; }
+.home-carousel .carousel-control { width: 5%; }
 /**************************************
 Slider
 **************************************/
@@ -92,10 +152,7 @@ Slider
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.img-maquina{
-	width: 400px;
-	height: auto;
-}
+.img-maquina { width: 100%; height: auto; }
 /*
 Bottom-a
 */
@@ -114,12 +171,14 @@ Pop-up
 	color            : white;
 	padding          : 10px 50px;
 	border-radius    : 20px;
+	width            : 100%;
 }
 .btn-ingresar:hover {
 	background-color : white;
 	color            : #00469A;
 	border           : solid 1px #00469A;
 }
+.btn-ingresar-container { margin-top: 20px; margin-bottom: 20px; }
 .btn-registrarse {
 	background-color : #2DB8E6;
 	color            : white;
@@ -133,15 +192,20 @@ Pop-up
 	border           : solid 1px #2DB8E6;
 }
 /**************************************
+Home
+**************************************/
+.home-right-border { border-right: 1px solid #dbdbdb; }
+.home-blue-zone h1 { font-size: 42px; font-weight: normal; margin-bottom: 20px; }
+a.home-registrarse { padding: 10px 40px; color: #0071ba; font-weight: bold; }
+.home-maquinas-container { position: relative; height: 100%; }
+/**************************************
 Footer
 **************************************/
 .right-vline { border-right: 2px solid #DFDFDF; }
 .links-footer:link:hover { color: #002476; text-decoration: none; }
-.links-footer {
-	color          : #DFDFDF;
-	text-transform : uppercase;
-	transition     : color 0.2s;
-}
+.links-footer { color: #999999; text-transform : uppercase; transition: 0.2s; }
+.links-footer h3 { margin: 0; font-size: 15px; }
+.footer-links-container { padding-top: 20px; }
 /**************************************
 aside-left
 **************************************/
@@ -626,6 +690,9 @@ medias
 	.right-vline { border-right: none;	}
 	.margin-top15sm-media { margin-top: 15px; }
 	.margin-bottom15sm-media { margin-bottom: 15px; }
+	.home-maquinas-container { margin-top: 50px; }
+	.links-footer h3 { margin: 15px 0; }
+	.home-right-border { border-right: none; }
 }
 @media(max-width: 919px) {
 	[class="col-sm-4 text-center prod-search"],
