@@ -675,6 +675,7 @@ Details
 .cancellation {
 	height: 100px;
 	overflow-y:scroll;
+  text-transform: uppercase;
 }
 #carousel-bottom > .carousel-control { background-image: none !important; }
 #carousel-bottom > .carousel-control > .glyphicon-chevron-left {
