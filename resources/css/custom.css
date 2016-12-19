@@ -19,6 +19,7 @@ html, body                  { height: 100%; }
 .margin-top10               { margin-top: 10px; }
 .margin-top15               { margin-top: 15px; }
 .margin-top50               { margin-top: 50px; }
+.margin-top60               { margin-top: 60px; }
 .margin-top75               { margin-top: 75px; }
 .margin-top100              { margin-top: 100px; }
 .margin-bottom50            { margin-bottom: 50px; }
@@ -28,6 +29,7 @@ html, body                  { height: 100%; }
 .color-naranja              { color: #f9ae3b !important; }
 .color-blanco               { color: white !important; }
 .color-gris		 							{ color: #BFBFBF !important; }
+.gris-title 								{ color: #606060; margin: 25px 0; }
 .color-gris-fuerte 					{ color: #BFBFBF !important; font-weight: bold; }
 .icon-input                 { cursor: text; }
 textarea:focus, input:focus { outline: none; }
@@ -258,7 +260,7 @@ aside-left
 .search-icon       {
 	float: right;
   margin-right: 10px;
-  margin-top: -36px;
+  margin-top: -31px;
   font-size: 18px;
 }
 .input-gen         { border: 0; background: #f9f9f9; color: #777777; }
@@ -391,8 +393,9 @@ aside-right search
   font-size      : 17px;
   text-transform : uppercase;
   font-weight    : normal;
-  color          : #183771;
+  color            : #0086c7;
 }
+.payment-collapse-container .panel-title {   color: #0086c7; }
 .panel-heading {
   padding                 : 15px 20px;
   border-top-left-radius  : 0px;
@@ -734,6 +737,7 @@ Contractor
  	border-radius: 20px;
  	color: white;
  	padding: 7px 35px;
+ 	width: 100%;
  }
  .btn-contractor:hover{
  	background-color: white;
@@ -756,6 +760,11 @@ Contractor
  	border: solid 1px #E4E4E4 !important;
  }
  .detail-contractor { border-top: 1px solid #EAEAEA; }
+ .contractor-rate { text-transform: uppercase; }
+ .contractor-stars { padding-top: 9px; margin-bottom: 15px; }
+ .comments { min-height: 80px; }
+ .comments h6 { margin-bottom: 0; }
+ .comments p { font-size: 10px; }
  /**************************************
 Cart
 **************************************/
