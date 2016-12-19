@@ -24,18 +24,29 @@
 </head>
 <body>
 <!-- Header -->
-<div class="container-fluid">
-  <div class="row margin-top10">
-    <div class="col-md-3">
-      <img src="../resources/img/logo-42.svg" class="logo">
-    </div>
-    <div class="col-md-4 col-md-offset-5 text-right">
-      <a href="#" class="btn">AYUDA</a>
-      <span>|</span>
-      <a href="#" class="btn">
-        HOLA, ISAC ROJO
-        <i class="fa fa-angle-down"></i>
-      </a>
+<div class="main-panel margin-top5p">
+  <div class="container-fluid">
+    <div class="row margin-top10">
+      <div class="col-md-3">
+        <img src="../resources/img/logo-42.svg" class="logo">
+      </div>
+      <div class="col-md-2 col-md-offset-1">
+        <div class="form-group header-searcher">
+            <input type="text" class="form-control input-gen search-input" placeholder="BUSCAR...">
+          </div>
+      </div>
+      <div class="col-md-4 col-md-offset-2 text-right">
+        <div class="row header-container">
+            <div class="text-right">
+              <a href="#" class="btn">AYUDA</a>
+              <span>|</span>
+              <a href="#" class="btn margin-right20">
+                HOLA, ISAC ROJO
+                <i class="fa fa-angle-down"></i>
+              </a>
+            </div>
+          </div>
+      </div>
     </div>
   </div>
 </div>
@@ -155,7 +166,7 @@
                 </div>
               </div>
             </div>
-            <div class="row">
+            <div class="row margin-bottom50">
               <div class="col-sm-4 nopadding-left">
                 <div class="concept">
                   <h3>descripción del evento:</h3>
@@ -195,11 +206,11 @@
                           <h3>detalle</h3>
                         </div>
                         <div class="row charge-balance">
-                          <div class="col-sm-6 nopadding-left">
+                          <div class="col-sm-6 nopadding-left text-left">
                             <span class="title-cb">cargo total:</span>
                             <span class="amount-total">$51,574.06 MXN</span>
                           </div>
-                          <div class="col-sm-6">
+                          <div class="col-sm-6 text-left">
                             <span class="title-cb">saldo:</span>
                             <span class="exception-total">no cuenta con monedero aún:</span>
                           </div>
@@ -231,11 +242,11 @@
                           <h3>detalle</h3>
                         </div>
                         <div class="row charge-balance">
-                          <div class="col-sm-6 nopadding-left">
+                          <div class="col-sm-6 nopadding-left text-left">
                             <span class="title-cb">cargo total:</span>
                             <span class="amount-total">$51,574.06 MXN</span>
                           </div>
-                          <div class="col-sm-6">
+                          <div class="col-sm-6 text-left">
                             <span class="title-cb">saldo:</span>
                             <span class="exception-total">no cuenta con monedero aún:</span>
                           </div>
@@ -267,11 +278,11 @@
                           <h3>detalle</h3>
                         </div>
                         <div class="row charge-balance">
-                          <div class="col-sm-6 nopadding-left">
+                          <div class="col-sm-6 nopadding-left text-left">
                             <span class="title-cb">cargo total:</span>
                             <span class="amount-total">$51,574.06 MXN</span>
                           </div>
-                          <div class="col-sm-6">
+                          <div class="col-sm-6 text-left">
                             <span class="title-cb">saldo:</span>
                             <span class="exception-total">no cuenta con monedero aún:</span>
                           </div>
@@ -299,24 +310,26 @@
 </div>
 </div>
 
-<!-- Footer -->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-3">
-      <img src="../resources/img/logo.svg">
+    <!-- Footer -->
+    <div class="container-fluid">
+      <div class="row footer-container">
+        <div class="col-md-3">
+          <img src="../resources/img/logo-42.svg" class="logo">
+        </div>
+        <div class="col-md-9 footer-links-container">
+          <div class="col-md-4 right-vline text-center">
+            <a class="links-footer" href="#"><h3>derechos reservados</h3></a>
+          </div>
+          <div class="col-md-4 right-vline text-center">
+            <a class="links-footer" href="#"><h3>terminos y condiciones</h3></a>
+          </div>
+          <div class="col-md-4 text-center">
+            <a class="links-footer" href="#"><h3>mapa de sitio</h3></a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-md-3 right-vline text-center">
-      <a class="links-footer" href="#"><h3>derechos reservados</h3></a>
-    </div>
-    <div class="col-md-3 right-vline text-center">
-      <a class="links-footer" href="#"><h3>terminos y condiciones</h3></a>
-    </div>
-    <div class="col-md-3 text-center">
-      <a class="links-footer" href="#"><h3>mapa de sitio</h3></a>
-    </div>
-  </div>
-</div>
-<!-- Fin Footer -->
+    <!-- Fin Footer -->
 
 <script>
   $('.rate-service').barrating({
