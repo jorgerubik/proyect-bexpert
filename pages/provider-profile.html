@@ -23,24 +23,41 @@
 <script src="../resources/js/jquery.barrating.min.js"></script>
 </head>
 <body>
+
 <!-- Header -->
-<div class="container-fluid">
-  <div class="row margin-top10">
-    <div class="col-md-3">
-      <img src="../resources/img/logo-42.svg" class="logo">
-    </div>
-    <div class="col-md-4 col-md-offset-5 text-right">
-      <a href="#" class="btn">AYUDA</a>
-      <span>|</span>
-      <a href="#" class="btn">
-        HOLA, ISAC ROJO
-        <i class="fa fa-angle-down"></i>
-      </a>
+<div class="main-panel">
+  <div class="container-fluid">
+    <div class="row margin-top10">
+      <div class="col-md-3">
+        <img src="../resources/img/logo-42.svg" class="logo">
+      </div>
+      <div class="col-md-2 col-md-offset-1">
+        <div class="form-group header-searcher">
+            <input type="text" class="form-control input-gen search-input" placeholder="BUSCAR...">
+            <span class="icon-input search-icon">
+              <i class="fa fa-search"></i>
+            </span>
+          </div>
+      </div>
+      <div class="col-md-4 col-md-offset-2 text-right">
+        <div class="row header-container">
+            <div class="text-right">
+              <a href="#" class="btn">AYUDA</a>
+              <span>|</span>
+              <a href="#" class="btn margin-right20">
+                HOLA, ISAC ROJO
+                <i class="fa fa-angle-down"></i>
+              </a>
+            </div>
+          </div>
+      </div>
     </div>
   </div>
 </div>
 <!-- Fin Header -->
-<div class="main-panel">
+
+
+<div class="main-panel provider-all-container">
 <div class="container-fluid">
   <div class="col-md-12">
     <div class="row">
@@ -80,9 +97,9 @@
         </div>
         <div class="row menu-provider">
           <ul class="nav nav-stacked nav-provider">
-            <li><a href="#">contratar</a></li>
-            <li><a href="#">repertorio</a></li>
-            <li><a href="#">política de cancelación</a></li>
+            <li class="active" id="1"><div>contratar</div></li>
+            <li id="2"><div>repertorio</div></li>
+            <li id="3"><div>política de cancelación</div></li>
           </ul>
         </div>
         <div class="row back-provider">
@@ -144,8 +161,7 @@
         </div>
         <!-- Fin Carousel -->
 
-        <div class="row">
-
+        <div class="row provider-cont active" id="pc1">
           <!-- Descriptions -->
           <div class="col-sm-8 caract-servicio-container">
             <div class="row features-service-title">
@@ -158,7 +174,7 @@
               <p>Prueba</p>
             </div>
             <div class="row subtitle">
-              <h3>descripción del servicio</h3>
+              <h3>cobertura gratis</h3>
             </div>
             <div class="row description">
               <p>Prueba</p>
@@ -175,7 +191,7 @@
           <!-- Ratings -->
           <div class="col-sm-4 rating-zone">
             <div class="row title-rating">
-              <h3>calificación público</h3>
+              <h3>valoración del público</h3>
             </div>
             <div class="row rate-container">
               <select class="rate-service">
@@ -187,7 +203,7 @@
               </select>
             </div>
             <div class="row title-rating">
-              <h3>calificación contratantes</h3>
+              <h3>valoración de contratantes</h3>
             </div>
             <div class="row rate-container">
               <select class="rate-service">
@@ -204,7 +220,171 @@
             </div>
           </div>
           <!-- Fin Ratings -->
+        </div>
 
+        <div class="row provider-cont" id="pc2">
+              <!-- Descriptions -->
+          <div class="col-sm-12 caract-servicio-container">
+            <div class="row features-service-title">
+              <h2>repertorio</h2>
+            </div>
+            <div class="table-responsive table-repertorio">
+              <table class="table table-striped">
+                <thead>
+                  <th>CANCIÓN</th>
+                  <th>ARTISTA</th>
+                  <th>GÉNERO</th>
+                  <th>MÚSICA POR EVENTO</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+          <!-- Fin Descriptions -->
+        </div>
+
+        <div class="row provider-cont" id="pc3">
+          <div class="col-sm-12 caract-servicio-container">
+            <div class="row politics-service-title">
+              <h2>política de cancelación</h2>
+            </div>
+            <div class="provider-politics-container">
+              <div class="politics-title-context"><h3>moderada</h3></div>
+              <div class="context-container">
+                <h4>
+                  en este tipo de política se cobra el 25% del costo del
+                  servicio por cancelar.
+                </h4>
+                <p>
+                  Si la cancelación del servicio es 10 días antes del evento,
+                  se reembolsará el 75% del costo del servicio con excepción de
+                  la comisión de B-Exper los impuestos.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
       </aside>
@@ -214,30 +394,43 @@
 </div>
 </div>
 
-<!-- Footer -->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-3">
-      <img src="../resources/img/logo.svg">
+    <!-- Footer -->
+    <div class="container-fluid">
+      <div class="row footer-container">
+        <div class="col-md-3">
+          <img src="../resources/img/logo-42.svg" class="logo">
+        </div>
+        <div class="col-md-9 footer-links-container">
+          <div class="col-md-4 right-vline text-center">
+            <a class="links-footer" href="#"><h3>derechos reservados</h3></a>
+          </div>
+          <div class="col-md-4 right-vline text-center">
+            <a class="links-footer" href="#"><h3>terminos y condiciones</h3></a>
+          </div>
+          <div class="col-md-4 text-center">
+            <a class="links-footer" href="#"><h3>mapa de sitio</h3></a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-md-3 right-vline text-center">
-      <a class="links-footer" href="#"><h3>derechos reservados</h3></a>
-    </div>
-    <div class="col-md-3 right-vline text-center">
-      <a class="links-footer" href="#"><h3>terminos y condiciones</h3></a>
-    </div>
-    <div class="col-md-3 text-center">
-      <a class="links-footer" href="#"><h3>mapa de sitio</h3></a>
-    </div>
-  </div>
-</div>
-<!-- Fin Footer -->
+    <!-- Fin Footer -->
 
 <script>
   $('.rate-service').barrating({
     theme: 'fontawesome-stars-o',
     initialRating: 3,
     readonly: true
+  });
+  $(".nav-provider li").click(function(){
+    var thisId = $(this).attr("id");
+    if($(this).attr("class") == "active") return;
+    $(".provider-cont.active").fadeOut('500', function() {
+      $(this).attr("class","row provider-cont");
+      $("#pc"+thisId).fadeIn('500', function() { });
+      $("#pc"+thisId).addClass("active");
+    });
+    $(".nav-provider .active").attr("class","");
+    $(this).addClass('active');
   });
 </script>
 </body>

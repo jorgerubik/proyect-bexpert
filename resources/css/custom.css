@@ -249,6 +249,11 @@ aside-left
 **************************************/
 .logo-search .logo { width: 100%; height: auto; }
 .search-input 		 { margin-top: 20px; }
+.header-searcher { height: 73px; position: relative; }
+.header-searcher input { width: 100%; }
+.header-searcher input[type="text"]:focus { outline: none; }
+.header-searcher .search-input { margin: 0; position: absolute; bottom: 0; }
+.header-searcher.form-group { margin-bottom: 0 !important; }
 .search-icon       {
 	float: right;
   margin-right: 10px;
@@ -494,11 +499,25 @@ Provider-profile
 }
 .name-provider h5:hover, .service-provider h5:hover { color: #428bca; }
 .price-provider h5 																	{ font-size: 22px; }
-.nav-provider>li>a:focus, .nav-provider>li>a:hover  {
+.nav-provider.nav>li>div {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  color: #dfdfdf;
+  cursor: pointer;
+}
+.nav-provider>li>div:focus, .nav-provider>li>div:hover  {
   text-decoration  : none;
   background-color : #428bca;
   color            : white;
   transition       : background 0.2s, color 0.2s;
+}
+.nav-provider>li.active>div, .nav-provider>li.active>div {
+  text-decoration: none;
+  background-color: #428bca;
+  color: white;
+  transition: background 0.2s, color 0.2s;
 }
 .back-provider {
 	margin-top: 50px;
@@ -514,7 +533,7 @@ Provider-profile
 	top            : -1px;
 	left           : 35px;
 }
-.carousel-provider-container { height: 325px; }
+.carousel-provider-container { height: 325px; margin: 45px 0;}
 .provider-carousel-img img {
 	width             : 100%;
 	position          : absolute;
@@ -554,7 +573,7 @@ Provider-profile
 	font-weight : normal;
 	margin      : 0;
 }
-.features-service-title { background: #e5f3ff; padding: 15px 5px; }
+.features-service-title { background: #e5f3ff; padding: 15px 20px; }
 .caract-servicio-container .subtitle { padding: 15px 5px; }
 .caract-servicio-container .subtitle h3 { font-size: 12px; font-weight: normal; }
 .caract-servicio-container .description {
@@ -578,6 +597,36 @@ Provider-profile
 	border     : 2px solid #e5f3ff;
 	min-height : 112px;
 }
+.provider-all-container { margin-bottom: 10%; }
+.provider-cont.active { display: inline; }
+.provider-cont { display: none; }
+.table-repertorio { height: 324px; }
+.table-repertorio .table * {
+	text-align: center;
+	border: none;
+	color: #666565;
+	font-weight: normal;
+}
+.politics-title-context { padding: 15px 20px; }
+.politics-title-context h3 { font-size: 14px; margin: 0 !important; }
+.context-container { padding: 20px; background: #f9f9f9 }
+.context-container h4 {
+	text-transform: uppercase;
+	color: #666666;
+	font-size: 12px;
+	font-weight: normal;
+}
+.context-container p {
+	color: #666666;
+	font-size: 14px;
+}
+.politics-service-title { margin-right: 0; margin-left: 0; }
+.politics-service-title h2 {
+	font-size   : 16px;
+	font-weight : normal;
+	margin      : 0;
+}
+.politics-service-title { background: #e5f3ff; padding: 15px 20px; }
 /**************************************
 Details
 **************************************/
@@ -668,7 +717,7 @@ Details
 .val-coment .br-theme-fontawesome-stars-o .br-widget { margin-left: 0px; }
 .val-coment .br-widget                               { margin-bottom: 10px; }
 .val-coment .comments h6                             { margin-bottom: 0; }
-.detail-carousel .carousel, .item, .active           { padding: 0 3%; }
+.detail-carousel .carousel          { padding: 0 3%; }
 /*************************************
 Contractor
  *************************************/
@@ -798,6 +847,8 @@ medias
 	.home-maquinas-container { margin-top: 50px; }
 	.links-footer h3 { margin: 15px 0; }
 	.home-right-border { border-right: none; }
+	.vmiddler { position: relative; transform: translate(0,0); }
+	.detail { height: auto; }
 }
 @media(max-width: 919px) {
 	[class="col-sm-4 text-center prod-search"],
