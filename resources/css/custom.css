@@ -2,6 +2,18 @@
 General
 **************************************/
 html, body                  { height: 100%; }
+.relativer 									{ position: relative; }
+.vmiddler {
+	position          : absolute;
+  width             : 100%;
+  top               : 50%;
+  left              : 0;
+  -ms-transform     : translate (0,-50%);
+  -webkit-transform : translate (0,-50%);
+  -moz-transform    : translate (0,-50%);
+  -o-transform      : translate (0,-50%);
+  transform         : translate(0,-50%);
+}
 .margin-right20             { margin-right: 20px; }
 .margin-top10               { margin-top: 10px; }
 .margin-top15               { margin-top: 15px; }
@@ -14,7 +26,8 @@ html, body                  { height: 100%; }
 .color-verde                { color: #8ac43f !important; }
 .color-naranja              { color: #f9ae3b !important; }
 .color-blanco               { color: white !important; }
-.color-gris		 { color: #BFBFBF !important; }
+.color-gris		 							{ color: #BFBFBF !important; }
+.color-gris-fuerte 					{ color: #BFBFBF !important; font-weight: bold; }
 .icon-input                 { cursor: text; }
 textarea:focus, input:focus { outline: none; }
 .form-control {
@@ -67,6 +80,10 @@ select::-ms-expand { display: none; }
 .top-border { border-top: 2px solid #e6e6e6; }
 .facebook-icon { color: #3c5a99; cursor: pointer; }
 .youtube-icon { color: #cc181e; cursor: pointer; }
+.br-theme-fontawesome-stars-o .br-widget a:after {
+  content: '\f005' !important;
+  color: #d2d2d2;
+}
 /**************************************
 Header
 **************************************/
@@ -370,7 +387,7 @@ aside-right search
   font-weight    : normal;
 }
 .panel-heading {
-  padding                 : 15px 25px;
+  padding                 : 15px 20px;
   border-top-left-radius  : 0px;
   border-top-right-radius : 0px;
 }
@@ -564,75 +581,98 @@ Provider-profile
 /**************************************
 Details
 **************************************/
-.detail{
-	border-top: 1px solid #EAEAEA;
-}
-.btn-add, .btn-remove{
-	width: 40px;
-	height: 40px;
-	border: 0;
-	background-color: transparent;
-	color: #BFBFBF;
-	text-align: center;
-	padding: 5px;
-	font-size: 20px;
+.detail               { border-top: 1px solid #EAEAEA; height: 500px; }
+.btn-add, .btn-remove {
+	width            : 40px;
+	height           : 40px;
+	border           : 0;
+	background-color : transparent;
+	color            : #BFBFBF;
+	text-align       : center;
+	padding          : 5px;
+	font-size        : 20px;
 }
 .prod-number {
-    width: 40px;
-    height: 40px;
-    border: 2px solid #EAF4F9;
-    color: black;
-    background-color: #fff;
-    text-align: center;
-    padding: 5px;
-    font-size: 20px;
- }
- .btn-addcar{
- 	background-color: #00469A;
- 	border-radius: 20px;
- 	color: white;
- }
- .btn-addcar:hover{
- 	background-color: white;
- 	border: solid 1px #00469A;
- 	border-radius: 20px;
- 	color: #00469A;
- }
- .img-social{
- 	width: 30px;
- 	height: 30px;
- }
- .comments, .cancellation{
- 	border: solid 3px #EAF4F9;
- 	padding-left: 10px;
- }
- .cancellation{
- 	height: 100px;
- 	overflow-y:scroll;
- }
- #carousel-bottom > .carousel-control{
-	background-image: none !important;
- }
- #carousel-bottom > .carousel-control > .glyphicon-chevron-left{
-	background-color: #1893CC;
-	border-radius: 100%;
-	width: 40px;
-	height: 40px;
-	padding-top: 3px;
-	left: 0% !important;
- }
- #carousel-bottom > .carousel-control > .glyphicon-chevron-right{
-	background-color: #1893CC;
-	border-radius: 100%;
-	width: 40px;
-	height: 40px;
-	padding-top: 3px;
-	right: 0% !important;
- }
-  /*************************************
+  width            : 65px;
+  height           : 40px;
+  border           : 2px solid #EAF4F9;
+  color            : black;
+  background-color : #fff;
+  text-align       : center;
+  padding          : 5px;
+  font-size        : 20px;
+  margin-top       : 14px;
+}
+.btn-addcar { background-color: #00469A; border-radius: 20px; color: white; }
+.btn-addcar:hover {
+	background-color: white;
+	border: solid 1px #00469A;
+	border-radius: 20px;
+	color: #00469A;
+}
+.img-social {
+	width: 30px;
+	height: 30px;
+}
+.comments, .cancellation {
+	border: solid 3px #EAF4F9;
+	padding-left: 10px;
+}
+.cancellation {
+	height: 100px;
+	overflow-y:scroll;
+}
+#carousel-bottom > .carousel-control { background-image: none !important; }
+#carousel-bottom > .carousel-control > .glyphicon-chevron-left {
+	background-color : #1893CC;
+	border-radius    : 100%;
+	width            : 40px;
+	height           : 40px;
+	padding-top      : 3px;
+	left             : 0% !important;
+}
+#carousel-bottom > .carousel-control > .glyphicon-chevron-right {
+	background-color : #1893CC;
+	border-radius    : 100%;
+	width            : 40px;
+	height           : 40px;
+	padding-top      : 3px;
+	right            : 0% !important;
+}
+.detail-img     { height: 100%; position: relative; }
+.detail-img img {
+	margin            : auto;
+	display           : block;
+}
+.detail-info-body h4, .detail-info-body h6 { margin: 10px 20px; }
+.info-price-period 		{ text-align: center; margin: 20px 0; }
+.info-price-period h4 { margin-bottom: 0; font-size: 22px;  }
+.info-price-period p  { font-size: 13px; font-weight: bold; }
+.input-amount {
+  margin: 0 !important;
+  position: absolute;
+  width: 100%;
+  padding: 0 15px;
+}
+.detail-info-body .btn-add, .detail-info-body .btn-remove {
+	font-size   : 30px;
+	font-weight : bold;
+}
+.addcar-group { position: relative; padding-top: 15px; }
+.detail-info-body .subtotal-price { font-size: 22px; }
+.proper-value h4 { text-decoration: underline; }
+.provider-social { padding: 0 15px; }
+.val-coment .br-theme-fontawesome-stars-o .br-widget a {
+  font: normal normal normal 25px/1 FontAwesome;
+}
+.val-coment .br-theme-fontawesome-stars-o .br-widget { margin-left: 0px; }
+.val-coment .br-widget                               { margin-bottom: 10px; }
+.val-coment .comments h6                             { margin-bottom: 0; }
+.detail-carousel .carousel, .item, .active           { padding: 0 3%; }
+/*************************************
 Contractor
  *************************************/
- .btn-gray{
+ .btn-gray {
  	color: white;
  	background-color: #BFBFBF;
  	border-radius: 20px;

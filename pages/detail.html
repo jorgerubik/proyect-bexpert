@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>B-Expert</title>
-	<meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="UTF-8">
+  <title>B-Expert</title>
+  <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" type="text/css" href="css/canvas.css"> -->
    <!-- Font Awesome -->
   <link rel="stylesheet" href="../resources/css/font-awesome/css/font-awesome.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" type="text/css" href="../resources/css/custom.css">
   <link rel="stylesheet" type="text/css" href="../resources/css/fontawesome-stars-o.css">
+  <link rel="stylesheet" type="text/css" href="../resources/css/jquery.timepicker.min.css">
+  <!-- <script src="js/modernizr.js"></script> -->
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="../resources/js/jquery.timepicker.min.js"></script>
+<script src="../resources/js/jquery.barrating.min.js"></script>
+<script type="text/javascript" src="../resources/js/detail.js"></script>
 </head>
 <body>
-<!-- Header -->
-<div class="container-fluid">
-  <div class="row margin-top10">
-    <div class="col-md-3">
-      <img src="../resources/img/logo-42.svg" class="logo">
-    </div>
-    <div class="col-md-4 col-md-offset-5 text-right">
-      <a href="#" class="btn">AYUDA</a>
-      <span>|</span>
-      <a href="#" class="btn">
-        HOLA, ISAC ROJO
-        <i class="fa fa-angle-down"></i>
-      </a>
-    </div>
-  </div>
-</div>
-<!-- Fin Header -->
 <div class="main-panel">
 <div class="container-fluid">
   <div class="col-md-12">
@@ -38,9 +32,12 @@
       <aside class="col-md-3">
 
         <!-- Search bar -->
+        <div class="logo-search">
+          <img src="../resources/img/logo-42.svg" class="logo">
+        </div>
         <form>
-          <div class="form-group">
-            <input type="text" class="form-control input-gen" placeholder="BUSCAR...">
+          <div class="form-group search-input">
+            <input type="text" class="form-control input-gen search-input" placeholder="BUSCAR...">
             <span class="icon-input search-icon">
               <i class="fa fa-search"></i>
             </span>
@@ -49,11 +46,8 @@
         <ul class="nav nav-stacked">
           <li><a href="#">general</a></li>
           <li><a href="#">contratante</a></li>
-          <li><a href="#">prestador</a></li>
           <li><a href="#">contacto</a></li>
         </ul>
-
-        
         <!-- Fin Search bar -->
 
       </aside>
@@ -61,40 +55,70 @@
 
       <!-- aside-right -->
       <aside class="col-md-9">
-        <div class="row detail">
-          <div class="col-md-6">
-            <img src="../resources/img/details/silla.png" alt="">
+
+        <div class="row header-container">
+          <div class="text-right">
+            <a href="#" class="btn">AYUDA</a>
+            <span>|</span>
+            <a href="#" class="btn margin-right20">
+              HOLA, ISAC ROJO
+              <i class="fa fa-angle-down"></i>
+            </a>
           </div>
-          <div class="col-md-6">
+        </div>
+
+        <div class="row detail relativer">
+          <div class="col-md-5 detail-img">
+            <div class="vmiddler">
+              <img src="../resources/img/details/silla.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-7 detail-info">
             <div class="panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">CARACTERÍSTICAS DEL PRODUCTO</h4>
               </div>
             </div>
-            <h4 class="color-gris">SILLAS PLEGABLES DE METAL</h4>
-            <h4 class="text-center">$ 10 MXN</h4>
-            <h6 class="color-azul">DESCRIPCIÓN</h6>
-            <h4 class="color-gris">SILLA PARA FIESTA</h4>
-            <h6 class="color-azul text-center">CANTIDAD</h6>
-            <div class="addcar-group text-center">
-              <button class="btn-remove" type="button">-</button>
-              <input type="text" name="prod-number" class="prod-number" value="1">
-              <button class="btn-add" type="button">+</button>
+            <div class="detail-info-body">
+              <h4 class="color-gris">SILLAS PLEGABLES DE METAL</h4>
+              <div class="info-price-period">
+                <h4 class="text-center">$ 10 MXN</h4>
+                <p>POR DÍA</p>
+              </div>
+              <h6 class="color-azul">DESCRIPCIÓN</h6>
+              <h4 class="color-gris">SILLA PARA FIESTA</h4>
+              <div class="addcar-group text-center">
+                <h6 class="color-azul text-center input-amount">CANTIDAD</h6>
+                <button class="btn-remove" type="button">-</button>
+                <input type="text" name="prod-number" class="prod-number" value="10">
+                <button class="btn-add" type="button">+</button>
+              </div>
+              <h4 class="text-center subtotal-price">$ 100 MXN</h4>
+              <h6 class="text-center">SUBTOTAL SIN I.V.A.</h6>
+              <div class="form-group text-center">
+                <input type="submit" name="add-car" class="btn btn-addcar" value="AGREGAR AL CARRITO">
+              </div>
+              <h6 class="color-azul">PROPIETARIO</h6>
+              <a href="#" class="color-gris proper-value"><h4>EVENTOS CHRIS</h4></a>
+              <div class="provider-social">
+                <a href="#">
+                  <span class="fa-stack fa-lg facebook-icon">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span></a>
+                <a href="#">
+                  <span class="fa-stack fa-lg youtube-icon">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </div>
             </div>
-            <h4 class="text-center">$ 100 MXN</h4>
-            <h6 class="text-center">SUBTOTAL SIN I.V.A.</h6>
-            <div class="form-group text-center">
-              <input type="submit" name="add-car" class="btn btn-addcar" value="AGREGAR AL CARRITO">
-            </div>
-            <h6 class="color-azul">PROPIETARIO</h6>
-            <a href="#" class="color-gris"><h4>EVENTOS CHRIS</h4></a>
-            <a href="#"><img src="../resources/img/details/facebook.svg" class="img-social"></a>
-            <a href="#"><img src="../resources/img/details/youtube.svg" class="img-social"></a>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
-            <h5 class="color-azul">CALIFICACIÓN CONTRATANTES</h5>
+          <div class="col-md-5 val-coment">
+            <h5 class="color-azul">VALORACIÓN</h5>
             <select id="rate-product">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -107,16 +131,31 @@
                 <p class="color-gris">SIN COMENTARIOS</p>
               </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-7">
             <h5 class="color-azul">POLÍTICAS DE CANCELACIÓN</h5>
             <div class="cancellation">
-              <p class="color-gris">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi deserunt sed maiores repudiandae cum hic aliquam similique, quam ratione dolorem fugiat recusandae alias facilis necessitatibus, ipsa officiis. Soluta, earum odio?</p>
-              <p class="color-gris">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi deserunt sed maiores repudiandae cum hic aliquam similique, quam ratione dolorem fugiat recusandae alias facilis necessitatibus, ipsa officiis. Soluta, earum odio?</p>
-
+              <p class="color-gris-fuerte">
+                flexible: este tipo de política no se
+                cobra ningún % por cancelar el servicio
+              </p>
+              <p class="color-gris">
+                si la cancelación por servicio es de 5 días antes del evento, se
+                reembolsará el 100% del costo del servicio con excepción de
+                b-exper y los impuestos.
+              </p>
+              <p class="color-gris-fuerte">
+                flexible: este tipo de política no se
+                cobra ningún % por cancelar el servicio
+              </p>
+              <p class="color-gris">
+                si la cancelación por servicio es de 5 días antes del evento, se
+                reembolsará el 100% del costo del servicio con excepción de
+                b-exper y los impuestos.
+              </p>
             </div>
           </div>
         </div>
-        <div class="row margin-top10">
+        <div class="row margin-top10 detail-carousel">
           <div class="col-md-12 margin-bottom50">
             <div class="panel-default">
               <div class="panel-heading">
@@ -224,34 +263,97 @@
             </div>
           </div>
         </div>
+
       </aside>
       <!-- Fin aside-right -->
     </div>
   </div>
 </div>
 </div>
+
 <!-- Footer -->
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-3">
-      <img src="../resources/img/logo.svg">
+      <div class="row footer-container">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-9 footer-links-container">
+          <div class="col-md-4 right-vline text-center">
+            <a class="links-footer" href="#"><h3>derechos reservados</h3></a>
+          </div>
+          <div class="col-md-4 right-vline text-center">
+            <a class="links-footer" href="#"><h3>terminos y condiciones</h3></a>
+          </div>
+          <div class="col-md-4 text-center">
+            <a class="links-footer" href="#"><h3>mapa de sitio</h3></a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-md-3 right-vline text-center">
-      <a class="links-footer" href="#"><h3>derechos reservados</h3></a>
-    </div>
-    <div class="col-md-3 right-vline text-center">
-      <a class="links-footer" href="#"><h3>terminos y condiciones</h3></a>
-    </div>
-    <div class="col-md-3 text-center">
-      <a class="links-footer" href="#"><h3>mapa de sitio</h3></a>
-    </div>
-  </div>
-</div>
 <!-- Fin Footer -->
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script src="../resources/js/jquery.barrating.min.js"></script>
-<script type="text/javascript" src="../resources/js/detail.js"></script>
+
+<script>
+  $(".icon-input").click(function(){ $(this).prev().focus(); });
+  $("#fecha-evento").datepicker({
+    timeFormat: 'h:mm',
+    interval: 30,
+    minTime: '01:00am',
+    maxTime: '11:00pm',
+    defaultTime: '12',
+    startTime: '10:00',
+    dynamic: true,
+    dropdown: true,
+    scrollbar: true
+  });
+  $('.hora-inicio.timepicker').timepicker({});
+  $('.hora-fin.timepicker').timepicker({});
+  $(".prod-img-container").css("height",$(".prod-img-container").css("width"));
+  $(window).resize(function() {
+    $(".prod-img-container").css("height",$(".prod-img-container").css("width"));
+  });
+  $( function() {
+    var handle = $( "#custom-handle" );
+    $( "#slider" ).slider({
+      min: 0,
+      max: 3500,
+      value: 1750,
+      create: function(min) {
+        handle.html("<span class='text-slider-range'>$"+$( this ).slider( "value" )+"</span>");
+      },
+      slide: function( event, ui ) {
+        handle.html( "<span class='text-slider-range'>$"+ui.value+"</span>" );
+      }
+    });
+  } );
+
+  /* Rating */
+  $('#rate-product').barrating({
+    theme: 'fontawesome-stars-o',
+    initialRating: 1
+  });
+  for (var i = 1; i <= 6; i++) {
+    $("#rate-product-in"+i).barrating({
+    theme: 'fontawesome-stars-o',
+    initialRating: 3,
+    readonly: true
+    });
+  }
+  /* Fin Rating */
+
+  /* Efecto circle-filter */
+  $(".circlef-container label").click(function(){
+    $(this).prev().trigger("click");
+  });
+  $(".circle-filter").click(function(){
+    if($(this).find(".opaciter").attr("class")=="opaciter active") {
+      $(this).find(".opaciter").attr("class","opaciter");
+      $(this).next().attr("class","");
+      return;
+    }
+    $(this).find(".opaciter").addClass("active");
+    $(this).next().addClass("active");
+  });
+  /* Fin Efecto circle-filter */
+
+</script>
 </body>
 </html>
