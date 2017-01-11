@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>B-Expert</title>
+  <title>B-Exper</title>
   <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -23,7 +23,7 @@
 <script src="../resources/js/jquery.barrating.min.js"></script>
 </head>
 <body>
-<div class="main-panel">
+<div class="main-panel margin-top5p">
 <div class="container-fluid">
   <div class="col-md-12">
     <div class="row">
@@ -73,7 +73,7 @@
           <div class="fs-section">
             <div class="fs-filter-title">categoría</div>
             <div class="margin-type">
-              <button class="btn">musica</button>
+              <button class="btn">música</button>
               <button class="btn">banquetes</button>
               <button class="btn">floreria</button>
               <button class="btn">postres</button>
@@ -518,7 +518,7 @@
             <a class="links-footer" href="#"><h3>derechos reservados</h3></a>
           </div>
           <div class="col-md-4 right-vline text-center">
-            <a class="links-footer" href="#"><h3>terminos y condiciones</h3></a>
+            <a class="links-footer" href="#"><h3>términos y condiciones</h3></a>
           </div>
           <div class="col-md-4 text-center">
             <a class="links-footer" href="#"><h3>mapa de sitio</h3></a>
@@ -582,10 +582,12 @@
   });
   $(".circle-filter").click(function(){
     if($(this).find(".opaciter").attr("class")=="opaciter active") {
-      $(this).find(".opaciter").attr("class","opaciter");
+      $(this).find(".opaciter").attr("class","opaciter active");
       $(this).next().attr("class","");
       return;
     }
+    $(".circlef-container .opaciter.active").parent().next().attr("class","");
+    $(".circlef-container .opaciter.active").attr("class","opaciter");
     $(this).find(".opaciter").addClass("active");
     $(this).next().addClass("active");
   });
