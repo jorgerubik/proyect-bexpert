@@ -1189,6 +1189,13 @@ medias
   .text-right.cart-container, .text-right.user-tools { text-align: center !important; }
   .row-nomargin { margin: 0; }
   .copy-footer h4 { text-align: center; }
+  .dp-margin { margin-top: 25px; margin-bottom: 15px; }
+  .dp-margin-bottom { margin-bottom: 15px; }
+  .comment-container { height: 380px; }
+  .cc-msg-header, .cc-msg-body { padding-top: 15px; padding-bottom: 15px; }
+  .cc-msg-header { padding-bottom: 0; }
+  .cc-msg-body { padding-bottom: 25px; }
+  .msg-author, .msg-ratting, .msg-date { margin-bottom: 15px; }
 }
 @media(max-width: 919px) {
 	[class="col-sm-4 text-center prod-search"],
@@ -1212,7 +1219,7 @@ medias
 
   .c-modal-marginer { padding: 15px 0; }
   .header-container.change-responsive { height: 125px; }
-  .comment-container { height: 340px; }
+  .comment-container { height: 300px; }
 }
 @media(max-width: 650px) {
 	[class="col-sm-4 text-center prod-search"],
