@@ -55,6 +55,7 @@ html, body                  { height: 100%; }
 .gris-title 								{ color: #606060; margin: 25px 0; }
 .color-gris-fuerte 					{ color: #BFBFBF !important; font-weight: bold; }
 .color-gris-fuerte-2        { color: #878787; }
+.color-negro                { color: #222 !important; }
 .icon-input                 { cursor: text; }
 textarea:focus, input:focus { outline: none; }
 .form-control {
@@ -108,6 +109,8 @@ select::-ms-expand { display: none; }
 .top-border { border-top: 2px solid #e6e6e6; }
 .facebook-icon { color: #3c5a99; cursor: pointer; }
 .youtube-icon { color: #cc181e; cursor: pointer; }
+.instagram-icon { color: #2F5C85; cursor: pointer; }
+.internet-icon { color: #3072BB; cursor: pointer; }
 .br-theme-fontawesome-stars-o .br-widget a:after {
   content: '\f005' !important;
   color: #d2d2d2;
@@ -816,6 +819,7 @@ Details
 .detail-info-body .subtotal-price { font-size: 22px; }
 .proper-value h4 { text-decoration: underline; }
 .provider-social { padding: 0 15px; }
+.provider-social a { text-decoration: none; }
 .val-coment .br-theme-fontawesome-stars-o .br-widget a {
   font: normal normal normal 25px/1 FontAwesome;
 }
@@ -823,6 +827,20 @@ Details
 .val-coment .br-widget                               { margin-bottom: 10px; }
 .val-coment .comments h6                             { margin-bottom: 0; }
 .detail-carousel .carousel          { padding: 0 3%; }
+.dp-margin { margin-top: 160px; margin-bottom: 50px; }
+.dp-margin-bottom { margin-bottom: 50px; }
+.comment-container {
+  height: 500px;
+  overflow-y: scroll;
+}
+.comment-container > .cc-msg:nth-of-type(odd) { background-color: #f9f9f9; }
+.cc-msg { padding: 15px; background-color: #FFFFFF; }
+.cc-msg-header { padding-top: 30px; padding-bottom: 30px; }
+.cc-msg-body { padding-top: 20px; padding-bottom: 40px; }
+.msg-author, .msg-ratting, .msg-date { font-weight: bold; }
+#cc-ratting-stars, .cc-rs-val { position: absolute; }
+#cc-ratting-stars { left: 0; }
+.cc-rs-val { right: 30%; top: 0; }
 /*************************************
 Contractor
  *************************************/
@@ -1041,6 +1059,7 @@ medias
   .popover-check { padding: 0 0 0 10px; }
   .header-container.change-responsive { padding: 20px 0 0 0; }
   .text-right.cart-container, .text-right.user-tools { text-align: center !important; }
+  .row-nomargin { margin: 0; }
 }
 @media(max-width: 919px) {
 	[class="col-sm-4 text-center prod-search"],
@@ -1064,6 +1083,7 @@ medias
 
   .c-modal-marginer { padding: 15px 0; }
   .header-container.change-responsive { height: 125px; }
+  .comment-container { height: 340px; }
 }
 @media(max-width: 650px) {
 	[class="col-sm-4 text-center prod-search"],
@@ -1108,5 +1128,6 @@ medias
 }
 @media(max-width: 360px) {
   .btn-ingresar, .btn-solicitar { padding: 10px 0; }
+  .detail-img img { width: 100%; }
 }
 

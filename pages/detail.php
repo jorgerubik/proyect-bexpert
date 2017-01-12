@@ -24,17 +24,39 @@
 <script type="text/javascript" src="../resources/js/detail.js"></script>
 </head>
 <body>
-<div class="main-panel margin-top5p">
+<div class="main-panel">
 <div class="container-fluid">
+  
+  <div class="row header-container change-responsive">
+    <div class="col-md-3">
+      <img src="../resources/img/logo-42.svg" class="logo">
+    </div>
+    <div class="col-md-3 col-md-offset-6 header-button-container">
+      <div class="row text-right cart-container padding-right15">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="fa-stack fa-lg num-items">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa calendar-text fa-stack-1x fa-inverse">0</i>
+        </span>
+      </div>
+      <div class="row padding-right15 margin-top5">
+        <div class="text-right user-tools">
+          <a href="#" class="btn">AYUDA</a>
+          <span>|</span>
+          <a href="#" class="btn header-user">
+            HOLA, ISAC ROJO
+            <i class="fa fa-angle-down"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="col-md-12">
     <div class="row">
       <!-- aside-left -->
       <aside class="col-md-3">
 
         <!-- Search bar -->
-        <div class="logo-search">
-          <img src="../resources/img/logo-42.svg" class="logo">
-        </div>
         <form>
           <div class="form-group search-input">
             <input type="text" class="form-control input-gen search-input" placeholder="BUSCAR...">
@@ -56,39 +78,45 @@
       <!-- aside-right -->
       <aside class="col-md-9">
 
-        <div class="row header-container">
-          <div class="text-right">
-            <a href="#" class="btn">AYUDA</a>
-            <span>|</span>
-            <a href="#" class="btn margin-right20">
-              HOLA, ISAC ROJO
-              <i class="fa fa-angle-down"></i>
-            </a>
-          </div>
-        </div>
+        <div class="row row-nomargin detail relativer">
 
-        <div class="row detail relativer">
-          <div class="col-md-5 detail-img">
+          <div class="row col-md-12">
+            <div class="panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <i class="fa fa-angle-right"></i>
+                  CARACTERÍSTICAS DEL PRODUCTO
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="row col-md-5 detail-img">
             <div class="vmiddler">
               <img src="../resources/img/details/silla.png" alt="">
             </div>
           </div>
-          <div class="col-md-7 detail-info">
-            <div class="panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">CARACTERÍSTICAS DEL PRODUCTO</h4>
-              </div>
-            </div>
+
+          <div class="row col-md-7 detail-info">
             <div class="detail-info-body">
-              <h4 class="color-gris">SILLAS PLEGABLES DE METAL</h4>
-              <div class="info-price-period">
+              <h4 class="color-gris-fuerte-2">SILLAS PLEGABLES DE METAL</h4>
+              <div class="info-price-period color-bluehard">
                 <h4 class="text-center">$ 10 MXN</h4>
                 <p>POR DÍA</p>
               </div>
-              <h6 class="color-azul">DESCRIPCIÓN</h6>
-              <h4 class="color-gris">SILLA PARA FIESTA</h4>
+
+              <h6 class="color-bluelight">VALORACIÓN</h6>
+              <select id="rate-product">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <h6 class="color-bluelight">DESCRIPCIÓN</h6>
+              <h4 class="color-gris-fuerte-2">SILLA PARA FIESTA</h4>
+              <h6 class="color-bluelight input-amount">CANTIDAD</h6>
               <div class="addcar-group text-center">
-                <h6 class="color-azul text-center input-amount">CANTIDAD</h6>
                 <button class="btn-remove" type="button">-</button>
                 <input type="text" name="prod-number" class="prod-number" value="10">
                 <button class="btn-add" type="button">+</button>
@@ -98,41 +126,56 @@
               <div class="form-group text-center">
                 <input type="submit" name="add-car" class="btn btn-addcar" value="AGREGAR AL CARRITO">
               </div>
-              <h6 class="color-azul">PROPIETARIO</h6>
-              <a href="#" class="color-gris proper-value"><h4>EVENTOS CHRIS</h4></a>
-              <div class="provider-social">
-                <a href="#">
-                  <span class="fa-stack fa-lg facebook-icon">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                  </span></a>
-                <a href="#">
-                  <span class="fa-stack fa-lg youtube-icon">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
+              <h6 class="color-bluelight">PROPIETARIO</h6>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <a href="#" class="color-gris-fuerte-2 proper-value"><h4>EVENTOS CHRIS</h4></a>
+                </div>
+                <div class="col-sm-6">
+                  <div class="provider-social">
+                  <a href="#">
+                    <span class="fa-stack fa-lg facebook-icon">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span></a>
+                  <a href="#">
+                    <span class="fa-stack fa-lg youtube-icon">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                  <a href="#">
+                    <span class="fa-stack fa-lg instagram-icon">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                  <a href="#">
+                    <span class="fa-stack fa-lg internet-icon">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-5 val-coment">
-            <h5 class="color-azul">VALORACIÓN</h5>
-            <select id="rate-product">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-              <div class="comments">
-                <h6 class="color-azul">COMENTARIOS:</h6>
-                <p class="color-gris">SIN COMENTARIOS</p>
+
+        <div class="row dp-margin">
+          <div class="col-md-12">
+            <div class="panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <i class="fa fa-angle-right"></i>
+                  Plíticas de cancelación
+                </h4>
               </div>
+            </div>
           </div>
-          <div class="col-md-7">
-            <h5 class="color-azul">POLÍTICAS DE CANCELACIÓN</h5>
+          <div class="col-md-12">
             <div class="cancellation">
               <p class="color-gris-fuerte">
                 flexible: este tipo de política no se
@@ -155,11 +198,90 @@
             </div>
           </div>
         </div>
+
+        <div class="row dp-margin-bottom">
+          <div class="col-md-12">
+            <div class="panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <i class="fa fa-angle-right"></i>
+                  Comentarios
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="comment-container">
+      <?php
+        for( $i=0; $i<=9; $i++ ) {
+          echo "
+              <!-- MSG0$i -->
+              <div class='cc-msg'>
+                <div class='row cc-msg-header'>
+                  <div class='col-sm-4 msg-author'>
+                    <div class='row'>
+                      <div class='col-sm-12'>
+                        <span class='color-gris-fuerte-2'>Por</span>
+                        <span class='color-negro text-uppercase'>Mauricio</span>
+                      </div>
+                      <div class='col-sm-12'>
+                        <span class='color-gris-fuerte-2'>de</span>
+                        <span class='color-negro'>Ciudad de México</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class='col-sm-4 msg-ratting color-bluelight'>
+                    <div class='relativer'>
+                      <select id='cc-ratting-stars-msg00$i'>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                      </select>
+                      <span class='cc-rs-val'>4.0</span>
+                    <script>
+                      $('#cc-ratting-stars-msg00$i').barrating({
+                        theme: 'fontawesome-stars-o',
+                        initialRating: 4,
+                        readonly: true
+                      });
+                    </script>
+                    </div>
+                  </div>
+
+                  <div class='col-sm-4 msg-date'>
+                    <span class='color-gris-fuerte-2'>5/11/2016</span>
+                  </div>
+                </div>
+
+                <div class='row cc-msg-body'>
+                  <div class='col-sm-12 color-gris-fuerte-2 text-justify'>
+                    <strong>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ratione amet quos fugiat expedita corporis maxime, doloremque qui incidunt facilis consequuntur, laudantium numquam assumenda? Nihil, corrupti! Fuga quisquam laudantium, eos.
+                    </strong>
+                  </div>
+                </div>
+              </div>
+              <!-- MSG0$i  -->
+          ";
+        }
+      ?>
+            </div>
+          </div>
+
+        </div>
+
         <div class="row margin-top10 detail-carousel">
           <div class="col-md-12 margin-bottom50">
             <div class="panel-default">
               <div class="panel-heading">
-                <h6 class="panel-title">sugerencias</h6>
+                <h6 class="panel-title">
+                  <i class="fa fa-angle-right"></i>
+                  sugerencias
+                </h6>
               </div>
             </div>
             <div class="carousel slide carousel-bottom-front" data-ride="carousel" id="carousel-bottom">
@@ -266,30 +388,20 @@
 
       </aside>
       <!-- Fin aside-right -->
+
+      <!-- Footer -->
+      <div class="row footer-container">
+        <div class="col-md-7 col-md-offset-5 footer-links-container">
+            <a class="copy-footer" href="#">
+              <h4>Copyright &copy; 2017, Condor Consulting Services. All rights reserved.</h4>
+            </a>
+        </div>
+      </div>
+      <!-- Fin Footer -->
     </div>
   </div>
 </div>
 </div>
-
-<!-- Footer -->
-<div class="container-fluid">
-      <div class="row footer-container">
-        <div class="col-md-3">
-        </div>
-        <div class="col-md-9 footer-links-container">
-          <div class="col-md-4 right-vline text-center">
-            <a class="links-footer" href="#"><h3>derechos reservados</h3></a>
-          </div>
-          <div class="col-md-4 right-vline text-center">
-            <a class="links-footer" href="#"><h3>términos y condiciones</h3></a>
-          </div>
-          <div class="col-md-4 text-center">
-            <a class="links-footer" href="#"><h3>mapa de sitio</h3></a>
-          </div>
-        </div>
-      </div>
-    </div>
-<!-- Fin Footer -->
 
 <script>
   $(".icon-input").click(function(){ $(this).prev().focus(); });
