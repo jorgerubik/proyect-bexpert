@@ -15,15 +15,38 @@
 <body>
 
 
-<div class="main-panel margin-top5p">
+<div class="main-panel">
 <div class="container-fluid">
+  
+  <div class="row header-container change-responsive">
+    <div class="col-md-3">
+      <img src="../resources/img/logo-42.svg" class="logo">
+    </div>
+    <div class="col-md-3 col-md-offset-6 header-button-container">
+      <div class="row text-right cart-container padding-right15">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="fa-stack fa-lg num-items">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa calendar-text fa-stack-1x fa-inverse">0</i>
+        </span>
+      </div>
+      <div class="row padding-right15 margin-top5">
+        <div class="text-right user-tools">
+          <a href="#" class="btn">AYUDA</a>
+          <span>|</span>
+          <a href="#" class="btn header-user">
+            HOLA, ISAC ROJO
+            <i class="fa fa-angle-down"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="col-md-12">
     <div class="row">
       <!-- aside-left -->
       <aside class="col-md-3">
-        <div class="logo-search">
-          <img src="../resources/img/logo-42.svg" class="logo">
-        </div>
         <!-- Search bar -->
           <div class="form-group search-input">
             <input type="text" class="form-control input-gen search-input" placeholder="BUSCAR...">
@@ -45,16 +68,6 @@
 
       <!-- aside-right -->
       <aside class="col-md-9">
-        <div class="row header-container">
-          <div class="text-right">
-            <a href="#" class="btn">AYUDA</a>
-            <span>|</span>
-            <a href="#" class="btn margin-right20">
-              HOLA, ISAC ROJO
-              <i class="fa fa-angle-down"></i>
-            </a>
-          </div>
-        </div>
 
 
 
@@ -219,6 +232,16 @@
         <!-- Fin Acordeón -->
       </aside>
       <!-- Fin aside-right -->
+
+      <!-- Footer -->
+      <div class="row footer-container">
+        <div class="col-md-7 col-md-offset-5 footer-links-container">
+            <a class="copy-footer" href="#">
+              <h4>Copyright &copy; 2017, Condor Consulting Services. All rights reserved.</h4>
+            </a>
+        </div>
+      </div>
+      <!-- Fin Footer -->
     </div>
   </div>
 </div>
@@ -512,27 +535,6 @@
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
   <!-- Modal -->
-
-    <!-- Footer -->
-    <div class="container-fluid">
-      <div class="row footer-container">
-        <div class="col-md-3">
-          <img src="../resources/img/logo-42.svg" class="logo">
-        </div>
-        <div class="col-md-9 footer-links-container">
-          <div class="col-md-4 right-vline text-center">
-            <a class="links-footer" href="#"><h3>derechos reservados</h3></a>
-          </div>
-          <div class="col-md-4 right-vline text-center">
-            <a class="links-footer" href="#"><h3>términos y condiciones</h3></a>
-          </div>
-          <div class="col-md-4 text-center">
-            <a class="links-footer" href="#"><h3>mapa de sitio</h3></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Fin Footer -->
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>

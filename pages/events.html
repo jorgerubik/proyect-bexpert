@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>B-Exper</title>
+	<meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   <!-- Font Awesome -->
+  <link rel="stylesheet" href="../resources/css/font-awesome/css/font-awesome.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="../resources/css/custom.css">
+  <link rel="stylesheet" type="text/css" href="../resources/css/fontawesome-stars-o.css">
+</head>
+<body>
+
+
+<div class="main-panel">
+<div class="container-fluid">
+  
+  <div class="row header-container change-responsive">
+    <div class="col-md-3">
+      <img src="../resources/img/logo-42.svg" class="logo">
+    </div>
+    <div class="col-md-3 col-md-offset-6 header-button-container">
+      <div class="row text-right cart-container padding-right15">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="fa-stack fa-lg num-items">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa calendar-text fa-stack-1x fa-inverse">0</i>
+        </span>
+      </div>
+      <div class="row padding-right15 margin-top5">
+        <div class="text-right user-tools">
+          <a href="#" class="btn">AYUDA</a>
+          <span>|</span>
+          <a href="#" class="btn header-user">
+            HOLA, ISAC ROJO
+            <i class="fa fa-angle-down"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-12">
+    <div class="row">
+      <!-- aside-left -->
+      <aside class="col-md-3">
+        <!-- Search bar -->
+          <div class="form-group search-input">
+            <input type="text" class="form-control input-gen search-input" placeholder="BUSCAR...">
+            <span class="icon-input search-icon">
+              <i class="fa fa-search"></i>
+            </span>
+          </div>
+        </form>
+        <ul class="nav nav-stacked">
+          <li><a href="#">general</a></li>
+          <li><a href="#">contratante</a></li>
+          <li><a href="#">contacto</a></li>
+        </ul>
+
+        <!-- Fin Search bar -->
+
+      </aside>
+      <!-- Fin aside-left -->
+
+      <!-- aside-right -->
+      <aside class="col-md-9">
+        <div class="row row-normagin relativer detail">
+          <div class="row col-md-12">
+            <div class="panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <i class="fa fa-angle-right"></i>
+                  MIS PEDIDOS
+                </h4>
+              </div>
+            </div> <!-- panel-default -->
+          </div>
+
+          <div class="row col-md-12 text-uppercase dpdwn-margin">
+            <div class="pull-right">
+              <div class="dropdown dropdown-custom">
+                <button class="btn btn-default dropdown-toggle" type="button" id="order-by" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Sin orden
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="order-by">
+                  <li><a data-option="opcion1" href="#">Opcion 1</a></li>
+                  <li><a data-option="opcion2" href="#">Opcion 2</a></li>
+                  <li><a data-option="opcion3" href="#">Opcion 3</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="pull-right">
+              Ordernar por:
+            </div>
+          </div>
+
+          <div class="row col-md-12">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs nav-tabs-custom" role="tablist">
+              <li role="presentation" class="active"><a href="#artistas" aria-controls="artistas" role="tab" data-toggle="tab">Artistas</a></li>
+              <li role="presentation"><a href="#propietarios" aria-controls="propietarios" role="tab" data-toggle="tab">Propietarios</a></li>
+            </ul>
+            <!-- Nav tabs -->
+
+            <!-- Tab panes -->
+            <div class="tab-content tab-content-custom">
+              <div role="tabpanel" class="tab-pane active" id="artistas">
+                <div class="table-responsive">
+                  <table class="table table-custom-event">
+                    <thead class="tce-head">
+                      <tr>
+                        <th>No. Evento</th>
+                        <th>Nombre</th>
+                        <th>Fecha</th>
+                        <th>Hora inicio</th>
+                        <th>Hora fin</th>
+                        <th>Estatus</th>
+                        <th>Datos generales</th>
+                      </tr>
+                    </thead>
+                    <tbody class="tce-body">
+                      <tr>
+                        <td>81</td>
+                        <td>Prueba2</td>
+                        <td>5/11/2016</td>
+                        <td>5/11/2016</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>
+                          <button type="button" class="btn btn-more-events"
+                                  data-toggle="modal"
+                                  data-target="#more-btn-item001">
+                                  Ver
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>102</td>
+                        <td>Prueba</td>
+                        <td>5/11/2016</td>
+                        <td>5/11/2016</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>
+                          <button type="button" class="btn btn-more-events"
+                                  data-toggle="modal"
+                                  data-target="#more-btn-item001">
+                                  Ver
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="propietarios">
+                <div class="table-responsive">
+                  <table class="table table-custom-event">
+                    <thead class="tce-head">
+                      <tr>
+                        <th>No. Evento</th>
+                        <th>Nombre</th>
+                        <th>Fecha inicio</th>
+                        <th>Hora fin</th>
+                        <th>Direcci&oacute;n</th>
+                        <th>Referencia</th>
+                        <th>Info de contrato</th>
+                      </tr>
+                    </thead>
+                    <tbody class="tce-body">
+                      <tr>
+                        <td>81</td>
+                        <td>Prueba2</td>
+                        <td>5/11/2016</td>
+                        <td>5/11/2016</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>
+                          <button type="button" class="btn btn-more-events"
+                                  data-toggle="modal"
+                                  data-target="#more-btn-prop001">
+                                  Ver
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>102</td>
+                        <td>Prueba</td>
+                        <td>5/11/2016</td>
+                        <td>5/11/2016</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>
+                          <button type="button" class="btn btn-more-events"
+                                  data-toggle="modal"
+                                  data-target="#more-btn-prop001">
+                                  Ver
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- Tab panes -->
+          </div>
+        </div>
+      </aside>
+      <!-- Fin aside-right -->
+
+      <!-- Footer -->
+      <div class="row footer-container">
+        <div class="col-md-7 col-md-offset-5 footer-links-container">
+            <a class="copy-footer" href="#">
+              <h4>Copyright &copy; 2017, Condor Consulting Services. All rights reserved.</h4>
+            </a>
+        </div>
+      </div>
+      <!-- Fin Footer -->
+    </div>
+  </div>
+</div>
+</div>
+  <!-- Modal -->
+  <div class="modal fade" id="more-btn-item001" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content home-modal">
+          <button type="button" class="close close-thisModal" data-dismiss="modal" aria-label="Close">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+            </span>
+          </button>
+        <div class="modal-body" id="modal-body">
+        <div class="row c-modal-marginer main-modal">
+          <div class="col-md-12 text-center modal-left-container">
+            <div class="color-bluehard cm-title">Detalles</div>
+            <div class="row row-event-mobile cm-body cm-form-control">
+              <!-- panel-default -->
+              <div class="row panel-default">
+                <div class="panel-heading text-left top-border">
+                  <h4 class="panel-title">
+                    <i class="fa fa-angle-right"></i>
+                    MIS PEDIDOS
+                  </h4>
+                </div>
+              </div>
+              <!-- panel-default -->
+
+              <!-- row text-left -->
+              <div class="row text-left row-top">
+                <div class="col-sm-12">
+                  <div class="row">
+                    <!-- COl01 -->
+                    <div class="col-sm-6">
+                      <!-- Row01 -->
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label class="cmb-label color-bluelight">
+                              No de evento:
+                            </label>
+                            <div class="color-gris-fuerte-2 cmb-text-1">
+                              1327
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Row01 -->
+
+                      <!-- Row02 -->
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label class="cmb-label color-bluelight">
+                              Hora inicio:
+                            </label>
+                            <div class="color-gris-fuerte-2 cmb-text-1">
+                              0:00
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label class="cmb-label color-bluelight">
+                              Hora fin:
+                            </label>
+                            <div class="color-gris-fuerte-2 cmb-text-1">
+                              1:00
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Row02 -->
+
+                      <!-- Row03 -->
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label class="cmb-label color-bluelight">
+                              Nombre de servicio:
+                            </label>
+                            <div class="color-gris-fuerte-2 cmb-text-1">
+                              Test Artista 7
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Row03 -->
+                    </div>
+                    <!-- COl01 -->
+
+                    <!-- COl02 -->
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label class="cmb-label color-bluelight">
+                              Nombre del servicio:
+                            </label>
+                            <div class="color-gris-fuerte-2 cmb-text-1">
+                              Fiesta de luci
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label class="cmb-label color-bluelight">
+                              Fecha:
+                            </label>
+                            <div class="color-gris-fuerte-2 cmb-text-1">
+                              10/11/2016
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label class="cmb-label color-bluelight">
+                              Contratante:
+                            </label>
+                            <div class="color-gris-fuerte-2 cmb-text-1">
+                              Kendy Rodgr&iacute;quez
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- COl02 -->
+                  </div>
+                </div>
+
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <label class="cmb-label color-bluelight" for="">
+                      Descripción del evento
+                    </label>
+                    <textarea class="form-control cmb-textarea"
+                              rows="5"></textarea>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 row-price">
+                  <div class="pull-right">
+                    <div class="color-bluehard cmb-label">
+                      <span class="cmb-ct-text">Estatus:</span>
+                      <span class="cmb-ct-price">Pagado</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- row text-left -->
+
+
+
+              <div class="row panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading text-left" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#pol-cancelation" aria-expanded="true" aria-controls="pol-cancelation">
+                        <i class="fa fa-angle-right"></i>
+                        Políticas de cancelación
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="pol-cancelation" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body text-justify">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis voluptates pariatur laborum consectetur est nisi cupiditate facilis omnis ad, nam consequuntur perferendis quae, aperiam. Rem ea asperiores laborum, error blanditiis.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!-- panel-default -->
+              <div class="row panel-default">
+                <div class="panel-heading text-left top-border">
+                  <h4 class="panel-title">
+                    <i class="fa fa-angle-right"></i>
+                    Direccion
+                  </h4>
+                </div>
+              </div>
+              <!-- panel-default -->
+
+              <!-- row text-left -->
+              <div class="row text-left row-top">
+                <div class="col-sm-12">
+                  <div class="row">
+                    <!-- col-sm-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="cmb-label color-bluelight">
+                          Ciudad o estado:
+                        </label>
+                        <div class="color-gris-fuerte-2 cmb-text-1">
+                          CDMX
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-sm-6 -->
+
+                    <!-- col-sm-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="cmb-label color-bluelight">
+                          Dirección del evento:
+                        </label>
+                        <div class="color-gris-fuerte-2 cmb-text-1">
+                          Prueba
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-sm-6 -->
+
+                    <!-- col-sm-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="cmb-label color-bluelight">
+                          Municipio:
+                        </label>
+                        <div class="color-gris-fuerte-2 cmb-text-1">
+                          Benito Juarez
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-sm-6 -->
+
+                    <!-- col-sm-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="cmb-label color-bluelight">
+                          Código Postal:
+                        </label>
+                        <div class="color-gris-fuerte-2 cmb-text-1">
+                          3560
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-sm-6 -->
+
+                    <!-- col-sm-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="cmb-label color-bluelight">
+                          Colonia:
+                        </label>
+                        <div class="color-gris-fuerte-2 cmb-text-1">
+                          Albert
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-sm-6 -->
+
+                    <!-- col-sm-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="cmb-label color-bluelight">
+                          Referencia para llegar al evento:
+                        </label>
+                        <div class="color-gris-fuerte-2 cmb-text-1">
+                          Prueba
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-sm-6 -->
+                  </div>
+                </div>
+              </div>
+              <!-- row text-left -->
+
+              <!-- panel-default -->
+              <div class="row panel-default">
+                <div class="panel-heading text-left top-border">
+                  <h4 class="panel-title">
+                    <i class="fa fa-angle-right"></i>
+                    Detalle del pago
+                  </h4>
+                </div>
+              </div>
+              <!-- panel-default -->
+
+              <!-- row text-left -->
+              <div class="row text-left row-top">
+                <div class="col-sm-12">
+                  <div class="row">
+                    <!-- col-sm-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="cmb-label color-bluelight">
+                          Tarifa por hora:
+                        </label>
+                        <div class="color-gris-fuerte-2 cmb-text-1">
+                          $10.00
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-sm-6 -->
+
+                    <!-- col-sm-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="cmb-label color-bluelight">
+                          Subtotal:
+                        </label>
+                        <div class="color-gris-fuerte-2 cmb-text-1">
+                          $10.00
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-sm-6 -->
+
+                    <!-- col-sm-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="cmb-label color-bluelight">
+                          Costo del evento:
+                        </label>
+                        <div class="color-gris-fuerte-2 cmb-text-1">
+                          $10.00
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-sm-6 -->
+
+                    <!-- col-sm-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="cmb-label color-bluelight">
+                          IVA:
+                        </label>
+                        <div class="color-gris-fuerte-2 cmb-text-1">
+                          $1.60
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-sm-6 -->
+
+                    <!-- col-sm-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="cmb-label color-bluelight">
+                          Cargos adicionales:
+                        </label>
+                        <div class="color-gris-fuerte-2 cmb-text-1">
+                          $0.00
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-sm-6 -->
+
+                    <!-- col-sm-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="cmb-label color-bluelight">
+                          Total:
+                        </label>
+                        <div class="color-gris-fuerte-2 cmb-text-1">
+                          $11.60
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-sm-6 -->
+                  </div>
+                </div>
+              </div>
+              <!-- row text-left -->
+            </div>
+          </div>
+        </div>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div>
+  <!-- Modal -->
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="more-btn-prop001" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content home-modal">
+          <button type="button" class="close close-thisModal" data-dismiss="modal" aria-label="Close">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+            </span>
+          </button>
+        <div class="modal-body" id="modal-body">
+        <div class="row c-modal-marginer main-modal">
+          <div class="col-md-12 text-center modal-left-container norow-mobile">
+            <div class="color-bluehard cm-title">Info del contrato</div>
+            <div class="row row-event-mobile-m2 cm-body cm-form-control">
+              <div class="col-xs-3 col-xs-offset-9 col-xs-custom-events">
+                <button type="button" class="btn btn-cancelar">Cancelar</button>
+              </div>
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs nav-tabs-custom ntce-m2" role="tablist">
+                <li role="presentation" class="active"><a href="#info-contract" aria-controls="info-contract" role="tab" data-toggle="tab">Info del contrato</a></li>
+                <li role="presentation"><a href="#detail-contract" aria-controls="detail-contract" role="tab" data-toggle="tab">Detalle</a></li>
+              </ul>
+              <!-- Nav tabs -->
+
+
+              <!-- Tab panes -->
+              <div class="tab-content tab-content-custom">
+                <div role="tabpanel" class="tab-pane active" id="info-contract">
+                  <div class="text-left">
+                    <!-- COL-SM-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="cmb-label color-bluelight" for="">
+                          Tolerancia:
+                        </label>
+                        <div class="color-gris-fuerte-2 cmb-text-1">
+                          Issac Rojo
+                        </div>
+                      </div>
+                    </div>
+                    <!-- COL-SM-6 -->
+
+                    <!-- COL-SM-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="cmb-label color-bluelight" for="">
+                          Monto de servicio:
+                        </label>
+                        <div class="color-gris-fuerte-2 cmb-text-1">
+                          30
+                        </div>
+                      </div>
+                    </div>
+                    <!-- COL-SM-6 -->
+
+                    <!-- COL-SM-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="cmb-label color-bluelight" for="">
+                          Cargos adicionales:
+                        </label>
+                        <div class="color-gris-fuerte-2 cmb-text-1">
+                          0
+                        </div>
+                      </div>
+                    </div>
+                    <!-- COL-SM-6 -->
+
+                    <!-- COL-SM-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="cmb-label color-bluelight" for="">
+                          Monto IVA:
+                        </label>
+                        <div class="color-gris-fuerte-2 cmb-text-1">
+                          4.8
+                        </div>
+                      </div>
+                    </div>
+                    <!-- COL-SM-6 -->
+
+                    <!-- COL-SM-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="cmb-label color-bluelight" for="">
+                          Descuento:
+                        </label>
+                        <div class="color-gris-fuerte-2 cmb-text-1">
+                          0
+                        </div>
+                      </div>
+                    </div>
+                    <!-- COL-SM-6 -->
+
+                    <!-- COL-SM-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="cmb-label color-bluelight" for="">
+                          Monto total:
+                        </label>
+                        <div class="color-gris-fuerte-2 cmb-text-1">
+                          34.8
+                        </div>
+                      </div>
+                    </div>
+                    <!-- COL-SM-6 -->
+
+
+                    <!-- COL-SM-12 -->
+                    <div class="col-sm-12 row-price">
+                      <div class="pull-right">
+                        <div class="color-bluehard cmb-label">
+                          <span class="cmb-ct-text">Estatus:</span>
+                          <span class="cmb-ct-price">Cancelado</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- COL-SM-12 -->
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="detail-contract">
+                  <div class="row text-left">
+                    <!-- col-sm-12 -->
+                    <div class="col-sm-12">
+                      <!-- col-sm-4 -->
+                      <div class="col-sm-4">
+                        <div class="form-group">
+                          <label class="cmb-label color-bluelight" for="">
+                            Producto:
+                          </label>
+                          <div class="color-gris-fuerte-2 cmb-text-1">
+                            Cristalería
+                          </div>
+                        </div>
+                      </div>
+                      <!-- col-sm-4 -->
+
+                      <!-- col-sm-4 -->
+                      <div class="col-sm-4">
+                        <div class="form-group">
+                          <label class="cmb-label color-bluelight" for="">
+                            Fecha entrega:
+                          </label>
+                          <div class="color-gris-fuerte-2 cmb-text-1">
+                            16/12/2017
+                          </div>
+                        </div>
+                      </div>
+                      <!-- col-sm-4 -->
+
+                      <!-- col-sm-4 -->
+                      <div class="col-sm-4">
+                        <div class="form-group">
+                          <label class="cmb-label color-bluelight" for="">
+                            Estatus:
+                          </label>
+                          <div class="color-gris-fuerte-2 cmb-text-1">
+                            Cancelado pagado
+                          </div>
+                        </div>
+                      </div>
+                      <!-- col-sm-4 -->
+                    </div>
+                    <!-- col-sm-12 -->
+
+                    <!-- col-sm-12 background-bluelight -->
+                    <div class="col-sm-12">
+                      <div class="col-sm-12 background-bluelight2">
+                        <!-- col-sm-4 -->
+                        <div class="col-sm-4">
+                          <div class="form-group">
+                            <label class="cmb-label color-bluelight" for="">
+                              Producto:
+                            </label>
+                            <div class="color-gris-fuerte-2 cmb-text-1">
+                              Salas VIC
+                            </div>
+                          </div>
+                        </div>
+                        <!-- col-sm-4 -->
+
+                        <!-- col-sm-4 -->
+                        <div class="col-sm-4">
+                          <div class="form-group">
+                            <label class="cmb-label color-bluelight" for="">
+                              Fecha entrega:
+                            </label>
+                            <div class="color-gris-fuerte-2 cmb-text-1">
+                              16/12/2017
+                            </div>
+                          </div>
+                        </div>
+                        <!-- col-sm-4 -->
+
+                        <!-- col-sm-4 -->
+                        <div class="col-sm-4">
+                          <div class="form-group">
+                            <label class="cmb-label color-bluelight" for="">
+                              Estatus:
+                            </label>
+                            <div class="color-gris-fuerte-2 cmb-text-1">
+                              Cancelado Pagado
+                            </div>
+                          </div>
+                        </div>
+                        <!-- col-sm-4 -->
+
+                        <!-- col-sm-4 -->
+                        <div class="col-sm-4">
+                          <div class="form-group">
+                            <label class="cmb-label color-bluelight" for="">
+                              Cantidad:
+                            </label>
+                            <div class="color-gris-fuerte-2 cmb-text-1">
+                              5
+                            </div>
+                          </div>
+                        </div>
+                        <!-- col-sm-4 -->
+
+                        <!-- col-sm-4 -->
+                        <div class="col-sm-4">
+                          <div class="form-group">
+                            <label class="cmb-label color-bluelight" for="">
+                              Fecha retiro:
+                            </label>
+                            <div class="color-gris-fuerte-2 cmb-text-1">
+                              16/12/2017
+                            </div>
+                          </div>
+                        </div>
+                        <!-- col-sm-4 -->
+
+                        <!-- col-sm-4 -->
+                        <div class="col-sm-4">
+                          <div class="row">
+                            <!-- col-sm-6 -->
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="cmb-label color-bluelight" for="">
+                                  Monto:
+                                </label>
+                                <div class="color-gris-fuerte-2 cmb-text-1">
+                                  25
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-sm-6 -->
+
+                            <!-- col-sm-6 -->
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="cmb-label color-bluelight" for="">
+                                  Tarifa:
+                                </label>
+                                <div class="color-gris-fuerte-2 cmb-text-1">
+                                  5
+                                </div>
+                              </div>
+                            </div>
+                            <!-- col-sm-6 -->
+                          </div>
+                        </div>
+                        <!-- col-sm-4 -->
+
+                        <div class="col-sm-12">
+                          <div class="form-group fg-policies">
+                            <label class="cmb-label color-bluelight" for="">
+                              Política de cancelaci&oacute;n:
+                            </label>
+                            <div class="color-gris-fuerte-2 cmb-text-1">
+                              <p>Moderada</p>
+                              <div class="cmb-policies">
+                                <p class="text-uppercase">
+                                  En este tipo de política se cobra el 25% del
+                                  costo del servicio por cancelar.
+                                </p>
+                                <p class="text-normal">
+                                  Si la cancelación del servicio es 10 días
+                                  antes del evento, se reembolsará el 75% del
+                                  costo del servicio con excepción de la
+                                  comisión de B-Exper y los impuestos.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-sm-12 background-bluelight -->
+                  </div>
+                </div>
+              </div>
+              <!-- Tab panes -->
+            </div>
+          </div>
+        </div>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div>
+  <!-- Modal -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="../resources/js/jquery.barrating.min.js"></script>
+<script type="text/javascript" src="../resources/js/detail.js"></script>
+<script src="../resources/js/jquery.timepicker.min.js"></script>
+
+
+  
+  <script>
+    //$("#more-btn-item001").modal("show");
+    //$("#more-btn-prop001").modal("show");
+
+    $("[target-select]").click(function(e) {
+      var cual = $(this).attr("target-select");
+
+      $("#"+cual+"").focus();
+    });
+
+    $(".date-form").datepicker();
+    $(".date-icon").click(function(e) {
+      $(this).prev().focus();
+    });
+
+    $("[data-option]").click(function(e) {
+      var cual = $(this).text();
+      $("#order-by").text(cual);
+    });
+  </script>
+</body>
+</html>
