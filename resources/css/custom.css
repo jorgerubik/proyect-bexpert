@@ -785,7 +785,7 @@ aside-right search
 /**************************************
 Provider-profile
 **************************************/
-.provider-left { padding: 50px; }
+.provider-left { padding: 0 30px; }
 .provider-left h4 {
 	text-transform : uppercase;
 	font-size      : 12px;
