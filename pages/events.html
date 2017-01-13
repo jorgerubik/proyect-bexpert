@@ -14,36 +14,139 @@
 </head>
 <body>
 
+<div class="modal fade" id="cart-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content home-modal">
+              <!--<button type="button" class="close close-thisModal" data-dismiss="modal" aria-label="Close">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+                </span>
+              </button>-->
+            <div class="modal-body" id="modal-body">
+              <div class="modal-border">
+                <div class="line-modal"></div>
+                <div class="row cart-element">
+                  <div class="col-sm-2"><input type="checkbox" class="gen-checkbox"></div>
+                  <div class="col-sm-2 cart-img-container">
+                    <div class="relativerh100">
+                      <div class="item-img-container"><img src="../resources/img/search-circle/silla.png" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 desc1">
+                    <h4>descripción</h4>
+                    <p>sillas para su fiesta</p>
+                  </div>
+                  <div class="col-sm-4 desc2">
+                    <div class="break margin-tb15"></div>
+                    <h5>,500.04 MXN</h5>
+                    <h4>cargo:</h4>
+                    <div class="break margin-tb15"></div>
+                    <h5>.55 MXN</h5>
+                    <h4>iva:</h4>
+                    <div class="break margin-tb15"></div>
+                    <h5>,555.04 MXN</h5>
+                    <h4>total:</h4>
+                    <div class="break margin-tb15"></div>
+                  </div>
+                </div>
+                <div class="line-modal"></div>
+                <div class="row cart-element">
+                  <div class="col-sm-2"><input type="checkbox" class="gen-checkbox"></div>
+                  <div class="col-sm-2 cart-img-container">
+                    <div class="relativerh100">
+                      <div class="item-img-container"><img src="../resources/img/search-circle/silla.png" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 desc1">
+                    <h4>descripción</h4>
+                    <p>sillas para su fiesta</p>
+                  </div>
+                  <div class="col-sm-4 desc2">
+                    <div class="break margin-tb15"></div>
+                    <h5>,500.04 MXN</h5>
+                    <h4>cargo:</h4>
+                    <div class="break margin-tb15"></div>
+                    <h5>.55 MXN</h5>
+                    <h4>iva:</h4>
+                    <div class="break margin-tb15"></div>
+                    <h5>,555.04 MXN</h5>
+                    <h4>total:</h4>
+                    <div class="break margin-tb15"></div>
+                  </div>
+                </div>
+                <div class="line-modal"></div>
+                <div class="row cart-element">
+                  <div class="col-sm-2"><input type="checkbox" class="gen-checkbox"></div>
+                  <div class="col-sm-2 cart-img-container">
+                    <div class="relativerh100">
+                      <div class="item-img-container"><img src="../resources/img/search-circle/silla.png" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 desc1">
+                    <h4>descripción</h4>
+                    <p>sillas para su fiesta</p>
+                  </div>
+                  <div class="col-sm-4 desc2">
+                    <div class="break margin-tb15"></div>
+                    <h5>,500.04 MXN</h5>
+                    <h4>cargo:</h4>
+                    <div class="break margin-tb15"></div>
+                    <h5>.55 MXN</h5>
+                    <h4>iva:</h4>
+                    <div class="break margin-tb15"></div>
+                    <h5>,555.04 MXN</h5>
+                    <h4>total:</h4>
+                    <div class="break margin-tb15"></div>
+                  </div>
+                </div>
+                <div class="line-modal"></div>
+                <div class="row cart-element">
+                  <div class="col-sm-4 col-sm-offset-2">
+                    <button class="btn btn-default floatr btn1">BORRAR</button>
+                  </div>
+                  <div class="col-sm-4">
+                    <button class="btn btn-default btn2">ENVIAR SOLICITUD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
 
 <div class="main-panel">
 <div class="container-fluid">
-  
-  <div class="row header-container change-responsive">
-    <div class="col-md-3">
-      <img src="../resources/img/logo-42.svg" class="logo">
-    </div>
-    <div class="col-md-3 col-md-offset-6 header-button-container">
-      <div class="row text-right cart-container padding-right15">
-        <i class="fa fa-shopping-cart"></i>
-        <span class="fa-stack fa-lg num-items">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa calendar-text fa-stack-1x fa-inverse">0</i>
-        </span>
+
+  <div class="col-md-12">
+    <div class="row header-container change-responsive">
+      <div class="col-md-3">
+        <img src="../resources/img/logo-42.svg" class="logo">
       </div>
-      <div class="row padding-right15 margin-top5">
-        <div class="text-right user-tools">
-          <a href="#" class="btn">AYUDA</a>
-          <span>|</span>
-          <a href="#" class="btn header-user">
-            HOLA, ISAC ROJO
-            <i class="fa fa-angle-down"></i>
-          </a>
+      <div class="col-md-3 col-md-offset-6 header-button-container">
+        <div class="relativer cart-relativer">
+          <div class="row text-right cart-container padding-right15">
+            <i class="fa fa-shopping-cart" data-toggle='modal' data-target='#cart-modal'></i>
+            <span class="fa-stack fa-lg num-items" data-toggle='modal' data-target='#cart-modal'>
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa calendar-text fa-stack-1x fa-inverse">0</i>
+            </span>
+          </div>
+        </div>
+  
+        <div class="row padding-right15 margin-top5">
+          <div class="text-right user-tools">
+            <a href="#" class="btn">AYUDA</a>
+            <span>|</span>
+            <a href="#" class="btn header-user">
+              HOLA, ISAC ROJO
+              <i class="fa fa-angle-down"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="col-md-12">
     <div class="row">
       <!-- aside-left -->
       <aside class="col-md-3">
