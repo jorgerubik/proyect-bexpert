@@ -158,7 +158,7 @@
     <div class="row">
       <!-- aside-left -->
       <aside class="col-md-3 provider-left">
-      <form>
+        <form>
           <div class="form-group search-input">
             <input type="text" class="form-control input-gen search-gen" placeholder="BUSCAR...">
             <span class="icon-input search-icon">
@@ -166,58 +166,110 @@
             </span>
           </div>
         </form>
-        <ul class="nav nav-stacked">
-          <li><a href="#">general</a></li>
-          <li><a href="#">contratante</a></li>
-          <li><a href="#">contacto</a></li>
-        </ul>
-
-        <!--Circle-container-->
-        <div class="circles-container">
-          <div class="col-sm-12 circlef-container">
-            <div class="circle-filter">
-              <div class="opaciter"></div>
-              <img src="../resources/img/search-circle/01.jpg" alt="">
+        <div class="lateral-provider">
+          <div class="fs-section">
+            <div class="row padding-tb30">
+              <div class="margin-type filter-content">
+                <div class="circles-container">
+                  <div class="col-sm-12 circlef-container">
+                    <div class="circle-filter">
+                      <div class="opaciter"></div>
+                      <img src="../resources/img/search-circle/01.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="provider-social text-center">
+                  <a href="">
+                    <span class="fa-stack fa-lg facebook-icon">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                  <a href="">
+                    <span class="fa-stack fa-lg youtube-icon">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                  <a href="#">
+                    <span class="fa-stack fa-lg instagram-icon">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                  <a href="#">
+                    <span class="fa-stack fa-lg internet-icon">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fs-section">
+            <div class="fs-filter-title"><span>nombre</span></div>
+            <div class="margin-type filter-content">
+              <div class="prov-des">
+                <h3>grupo galante</h3>
+              </div>
+            </div>
+          </div>
+          <div class="fs-section">
+            <div class="fs-filter-title"><span>tipo de servicio</span></div>
+            <div class="margin-type filter-content">
+              <div class="prov-des">
+                <h3>versatil</h3>
+              </div>
+            </div>
+          </div>
+          <div class="fs-section">
+            <div class="fs-filter-title"><span>tarifa por hora</span></div>
+            <div class="margin-type filter-content">
+              <div class="prov-des">
+                <h3 class="prov-enf1">$500 mxn</h3>
+              </div>
+            </div>
+          </div>
+          <div class="fs-section">
+            <div class="fs-filter-title"><span>asesor</span></div>
+            <div class="margin-type filter-content">
+              <div class="prov-des">
+                <h3 class="prov-enf2">b exper exper</h3>
+              </div>
+            </div>
+          </div>
+          <div class="fs-section">
+            <div class="fs-filter-title"><span>valoración</span></div>
+            <div class="margin-type filter-content rate-search-container padding-tb30">
+              <select id="rate-product">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
             </div>
           </div>
         </div>
-        <!--Fin Circle-container-->
+        <!-- Fin Search bar -->
 
-        <div class="row name-provider">
-          <h4>nombre</h4>
-          <h5 class="non-hover-t">grupo galante</h5>
-          <span class="fa-stack fa-lg facebook-icon">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-          </span>
-          <span class="fa-stack fa-lg youtube-icon">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
-          </span>
-        </div>
-        <div class="row service-provider">
-          <h4>tipo de servicio</h4>
-          <h5 class="non-hover-t">versatil</h5>
-        </div>
-        <div class="row price-provider">
-          <h4>tarifa por hora</h4>
-          <h5>$ 500 MXN</h5>
-        </div>
         <div class="row menu-provider">
           <ul class="nav nav-stacked nav-provider">
             <li class="active" id="1"><div>contratar</div></li>
             <li id="2"><div>repertorio</div></li>
-            <li id="3"><div>política de cancelación</div></li>
           </ul>
         </div>
         <div class="row back-provider">
-          <span>
+          <div class="back-container">
             <span class="fa-stack fa-lg icon">
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa fa-angle-left fa-stack-1x fa-inverse"></i>
             </span>
+          </div>
+          <div class="back-container">
             <span class="back">regresar</span>
-          </span>
+          </div>
         </div>
 
       </aside>
@@ -239,29 +291,24 @@
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner provider-carousel-img" role="listbox">
-              <div class="item active">
-                <img src="../resources/img/provider-profile/car-1.jpg" alt="">
-              </div>
-              <div class="item">
-                <img src="../resources/img/provider-profile/car-2.jpg" alt="">
-              </div>
-              <div class="item">
-                <img src="../resources/img/provider-profile/car-3.jpg" alt="">
-              </div>
+              <div class="item active"><div class="slider-img1"></div></div>
+              <div class="item"><div class="slider-img2"></div></div>
+              <div class="item"><div class="slider-img3"></div></div>
+              <div class="item"><div class="slider-img4"></div></div>
             </div>
 
             <!-- Controls -->
             <a class="left carousel-control" href="#carousel-provider" role="button" data-slide="prev">
               <span class="fa-stack fa-lg icon">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-angle-left fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-angle-left fa-stack-2x fa-inverse"></i>
               </span>
               <span class="sr-only">Previous</span>
             </a>
             <a class="right carousel-control" href="#carousel-provider" role="button" data-slide="next">
               <span class="fa-stack fa-lg icon">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-angle-right fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-angle-right fa-stack-2x fa-inverse"></i>
               </span>
               <span class="sr-only">Next</span>
             </a>
@@ -269,65 +316,368 @@
         </div>
         <!-- Fin Carousel -->
 
-        <div class="row provider-cont active" id="pc1">
-          <!-- Descriptions -->
-          <div class="col-sm-8 caract-servicio-container">
-            <div class="row features-service-title">
-              <h2>características del servicio</h2>
-            </div>
-            <div class="row subtitle">
-              <h3>descripción del servicio</h3>
-            </div>
-            <div class="row description">
-              <p>Prueba</p>
-            </div>
-            <div class="row subtitle">
-              <h3>cobertura gratis</h3>
-            </div>
-            <div class="row description">
-              <p>Prueba</p>
-            </div>
-            <div class="row subtitle">
-              <h3>prerequisitos de contratación</h3>
-            </div>
-            <div class="row description">
-              <p>Prueba</p>
-            </div>
+        <div class="row contrats-container">
+          <div class="col-md-4 col-md-offset-4">
+            <button class="btn btn-default">CONTRATAR</button>
           </div>
-          <!-- Fin Descriptions -->
+        </div>
 
-          <!-- Ratings -->
-          <div class="col-sm-4 rating-zone">
-            <div class="row title-rating">
-              <h3>valoración del público</h3>
+        <!-- Acordeon -->
+        <div class="row provider-cont active" id="pc1">
+          <div class="panel-group acordeon-search" id="accordion" role="tablist" aria-multiselectable="true">
+
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fa fa-angle-right"></i>características del servicio
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body caract-servicio-container">
+                  <div class="row subtitle">
+                    <h3>descripción del servicio</h3>
+                  </div>
+                  <div class="row description">
+                    <p>Prueba</p>
+                  </div>
+                  <div class="row subtitle">
+                    <h3>cobertura gratis</h3>
+                  </div>
+                  <div class="row description">
+                    <p>Prueba</p>
+                  </div>
+                  <div class="row subtitle">
+                    <h3>prerequisitos de contratación</h3>
+                  </div>
+                  <div class="row description">
+                    <p>Prueba</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="row rate-container">
-              <select class="rate-service">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
+
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fa fa-angle-right"></i>políticas de cancelación
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  <div class="col-md-12">
+                    <div class="row prov-politics">
+                      <h5>MODERADA</h5>
+                    </div>
+                    <div class="row">
+                      <div class="desc-politics">
+                        <p>
+                          EN ESTE TIPO DE POLÍTICA SE COBRA EL 25% DEL COSTO DEL SERVICIO
+                          POR CANCELAR.
+                        </p>
+                        <p>
+                          Si la cancelación del servicio es 10 días antes del evento, se
+                          reembolsará el 75% del costo del servicio con excepción de la
+                          comisión de B-Exper y los impuestos.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="row title-rating">
-              <h3>valoración de contratantes</h3>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    <i class="fa fa-angle-right"></i>valoraciones
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <div class="col-md-12">
+                    <!-- Ratings -->
+                    <div class="col-sm-6 rating-zone">
+                      <div class="row title-rating">
+                        <h3>valoración del público</h3>
+                      </div>
+                      <div class="row rate-container">
+                        <select class="rate-service">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                        <span class="rate-amount"></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 rating-zone">
+                      <div class="row title-rating">
+                        <h3>valoración de contratantes</h3>
+                      </div>
+                      <div class="row rate-container">
+                        <select class="rate-service">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                        <span class="rate-amount"></span>
+                      </div>
+                    </div>
+                    <!-- Fin Ratings -->
+                    </div>
+                </div>
+              </div>
             </div>
-            <div class="row rate-container">
-              <select class="rate-service">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </div>
-            <div class="row comments-service">
-              <h4>comentarios sobre el profesional</h4>
-              <p>SIN COMENTARIOS</p>
+
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFour">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    <i class="fa fa-angle-right"></i>comentarios sobre el profesional
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div class="panel-body comments-body">
+                  <div class="comments-container">
+                    <div class="row info-container">
+                      <div class="col-md-4">
+                        <p class="auth-info">Por <span>MAURICIO</span></p>
+                        <p class="auth-info">de <span>Ciudad de México</span></p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="rate-container">
+                          <select class="comment-rate">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span class="rate-amount"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <p class="comment-date">5/11/2016</p>
+                      </div>
+                    </div>
+                    <div class="row pcomment-container">
+                      <p class="comment">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni illo odio, maxime blanditiis eaque. Eveniet, quo, aliquid. Quaerat doloribus dolorem repudiandae commodi perferendis, numquam, non. Itaque eius, iure quidem eaque!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="comments-container">
+                    <div class="row info-container">
+                      <div class="col-md-4">
+                        <p class="auth-info">Por <span>MAURICIO</span></p>
+                        <p class="auth-info">de <span>Ciudad de México</span></p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="rate-container">
+                          <select class="comment-rate">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span class="rate-amount"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <p class="comment-date">5/11/2016</p>
+                      </div>
+                    </div>
+                    <div class="row pcomment-container">
+                      <p class="comment">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni illo odio, maxime blanditiis eaque. Eveniet, quo, aliquid. Quaerat doloribus dolorem repudiandae commodi perferendis, numquam, non. Itaque eius, iure quidem eaque!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="comments-container">
+                    <div class="row info-container">
+                      <div class="col-md-4">
+                        <p class="auth-info">Por <span>MAURICIO</span></p>
+                        <p class="auth-info">de <span>Ciudad de México</span></p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="rate-container">
+                          <select class="comment-rate">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span class="rate-amount"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <p class="comment-date">5/11/2016</p>
+                      </div>
+                    </div>
+                    <div class="row pcomment-container">
+                      <p class="comment">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni illo odio, maxime blanditiis eaque. Eveniet, quo, aliquid. Quaerat doloribus dolorem repudiandae commodi perferendis, numquam, non. Itaque eius, iure quidem eaque!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="comments-container">
+                    <div class="row info-container">
+                      <div class="col-md-4">
+                        <p class="auth-info">Por <span>MAURICIO</span></p>
+                        <p class="auth-info">de <span>Ciudad de México</span></p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="rate-container">
+                          <select class="comment-rate">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span class="rate-amount"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <p class="comment-date">5/11/2016</p>
+                      </div>
+                    </div>
+                    <div class="row pcomment-container">
+                      <p class="comment">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni illo odio, maxime blanditiis eaque. Eveniet, quo, aliquid. Quaerat doloribus dolorem repudiandae commodi perferendis, numquam, non. Itaque eius, iure quidem eaque!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="comments-container">
+                    <div class="row info-container">
+                      <div class="col-md-4">
+                        <p class="auth-info">Por <span>MAURICIO</span></p>
+                        <p class="auth-info">de <span>Ciudad de México</span></p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="rate-container">
+                          <select class="comment-rate">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span class="rate-amount"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <p class="comment-date">5/11/2016</p>
+                      </div>
+                    </div>
+                    <div class="row pcomment-container">
+                      <p class="comment">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni illo odio, maxime blanditiis eaque. Eveniet, quo, aliquid. Quaerat doloribus dolorem repudiandae commodi perferendis, numquam, non. Itaque eius, iure quidem eaque!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="comments-container">
+                    <div class="row info-container">
+                      <div class="col-md-4">
+                        <p class="auth-info">Por <span>MAURICIO</span></p>
+                        <p class="auth-info">de <span>Ciudad de México</span></p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="rate-container">
+                          <select class="comment-rate">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span class="rate-amount"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <p class="comment-date">5/11/2016</p>
+                      </div>
+                    </div>
+                    <div class="row pcomment-container">
+                      <p class="comment">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni illo odio, maxime blanditiis eaque. Eveniet, quo, aliquid. Quaerat doloribus dolorem repudiandae commodi perferendis, numquam, non. Itaque eius, iure quidem eaque!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="comments-container">
+                    <div class="row info-container">
+                      <div class="col-md-4">
+                        <p class="auth-info">Por <span>MAURICIO</span></p>
+                        <p class="auth-info">de <span>Ciudad de México</span></p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="rate-container">
+                          <select class="comment-rate">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span class="rate-amount"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <p class="comment-date">5/11/2016</p>
+                      </div>
+                    </div>
+                    <div class="row pcomment-container">
+                      <p class="comment">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni illo odio, maxime blanditiis eaque. Eveniet, quo, aliquid. Quaerat doloribus dolorem repudiandae commodi perferendis, numquam, non. Itaque eius, iure quidem eaque!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="comments-container">
+                    <div class="row info-container">
+                      <div class="col-md-4">
+                        <p class="auth-info">Por <span>MAURICIO</span></p>
+                        <p class="auth-info">de <span>Ciudad de México</span></p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="rate-container">
+                          <select class="comment-rate">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <span class="rate-amount"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <p class="comment-date">5/11/2016</p>
+                      </div>
+                    </div>
+                    <div class="row pcomment-container">
+                      <p class="comment">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni illo odio, maxime blanditiis eaque. Eveniet, quo, aliquid. Quaerat doloribus dolorem repudiandae commodi perferendis, numquam, non. Itaque eius, iure quidem eaque!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- Fin Ratings -->
         </div>
 
         <div class="row provider-cont" id="pc2">
@@ -473,28 +823,6 @@
           <!-- Fin Descriptions -->
         </div>
 
-        <div class="row provider-cont" id="pc3">
-          <div class="col-sm-12 caract-servicio-container">
-            <div class="row politics-service-title">
-              <h2>política de cancelación</h2>
-            </div>
-            <div class="provider-politics-container">
-              <div class="politics-title-context"><h3>moderada</h3></div>
-              <div class="context-container">
-                <h4>
-                  en este tipo de política se cobra el 25% del costo del
-                  servicio por cancelar.
-                </h4>
-                <p>
-                  Si la cancelación del servicio es 10 días antes del evento,
-                  se reembolsará el 75% del costo del servicio con excepción de
-                  la comisión de B-Exper los impuestos.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </aside>
       <!-- Fin aside-right -->
     </div>
@@ -518,6 +846,11 @@
     initialRating: 3,
     readonly: true
   });
+  $('.comment-rate').barrating({
+    theme: 'fontawesome-stars-o',
+    initialRating: 4,
+    readonly: true
+  });
   $(".nav-provider li").click(function(){
     var thisId = $(this).attr("id");
     if($(this).attr("class") == "active") return;
@@ -529,6 +862,24 @@
     $(".nav-provider .active").attr("class","");
     $(this).addClass('active');
   });
+  $('#rate-product').barrating({
+    theme: 'fontawesome-stars-o',
+    initialRating: 3,
+    readonly: true
+  });
+  $(".rate-container span").html($(".rate-container .br-current-rating").html()+".0");
+  var starPad = ($(".rate-search-container .br-wrapper").width()-150)/2;
+  $(".rate-search-container .br-wrapper").css("padding-left",starPad);
+  var nImgs = $(".provider-carousel-img .item").length;
+  for(var n=1;n<=nImgs;n++) {
+    $(".slider-img"+n).css("background-image","url(../resources/img/provider-profile/car-"+n+".jpg)");
+  }
+  $(window).resize(function(){
+    $(".rate-search-container .br-wrapper").css("padding-left",0);
+    var starPad = ($(".rate-search-container .br-wrapper").width()-150)/2;
+    $(".rate-search-container .br-wrapper").css("padding-left",starPad);
+  });
+
 </script>
 </body>
 </html>
