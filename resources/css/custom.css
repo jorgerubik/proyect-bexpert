@@ -49,6 +49,7 @@ html, body      { height: 100%; }
 .padding-left10             { padding-left: 10px; }
 .padding-tb30               { padding: 30px 0 !important; }
 .background-bluelight       { background: #0098d1 !important; }
+.background-bluelight2      { background: #F2F7FC !important; }
 .background-bluehard        { background: #00469a !important; }
 .color-bluelight            { color: #0098d1 !important; }
 .color-bluehard             { color: #00469a !important; }
@@ -206,7 +207,8 @@ button.close.close-thisModal {
 }
 .modal-left-container h3  { margin: 45px 0 30px 0; }
 .modal-right-container h3 { margin: 20px 0 30px 0; }
-.main-modal input[type="text"], .main-modal input[type="password"] {
+.main-modal input[type="text"], .main-modal input[type="password"],
+input[type="text"] {
 	background : white;
 	color      : #9e9e9e;
 	border     : 1px solid #e4e4e4;
@@ -231,7 +233,7 @@ i, .home-carousel .carousel-control .icon-next, .home-carousel .carousel-control
 .home-carousel .carousel-control.right i { right: 15px; }
 .home-carousel .carousel-control.left i  { left: 15px; }
 .home-carousel .carousel-control { width: 5%; }
-/**************************************
+ /**************************************
 Cart Modal
 **************************************/
 #cart-modal .modal-body { padding: 10px; }
@@ -785,7 +787,7 @@ aside-right search
 /**************************************
 Provider-profile
 **************************************/
-.provider-left { padding: 0 30px; }
+.provider-left { padding: 50px; }
 .provider-left h4 {
 	text-transform : uppercase;
 	font-size      : 12px;
@@ -1210,6 +1212,55 @@ Contractor
  }
  .arrow-up { top: 0; }
  .arrow-down { bottom: 0; }
+ .table-warranty { margin-top: 30px; }
+ .table-warranty thead tr th {
+  border-bottom  : 2px solid transparent;
+  font-weight    : 500;
+  text-transform : uppercase;
+  text-align     : center;
+ }
+ .table-warranty tbody tr td {
+  border-top: 1px solid transparent;
+  text-align: center;
+ }
+ .table-warranty tbody tr td .btn-ver {
+  color            : #fff;
+  width            : 100px;
+  padding-top      : 2px;
+  padding-bottom   : 2px;
+  border           : 0;
+  border-radius    : 15px;
+  background-color : #ABABAB;
+  font-weight      : 300;
+  text-transform   : uppercase;
+ }
+ .table-warranty tbody tr td .btn-ver:hover { color: #222; }
+ .warranty-hr { border-top: 2px solid #CACACA }
+ .warranty-form-1 {
+  margin-top: 30px;
+ }
+ .w-search-icon i {
+  color             : #666666;
+  position          : absolute;
+  right             : 10px;
+  top               : 50%;
+  -webkit-transform : translate(0,-50%);
+  -ms-transform     : translate(0,-50%);
+  -o-transform      : translate(0,-50%);
+  transform         : translate(0,-50%);
+ }
+ .fc-hidden {
+  border           : 1px solid transparent !important;
+  padding-left     : 0;
+  padding-bottom   : 0;
+  background-color : #fff !important;
+  cursor           : default !important;
+ }
+ .fc-hidden:focus {
+  border-color       : transparent;
+  -webkit-box-shadow : none !important;
+  box-shadow         : none !important;
+ }
  /**************************************
 Cart
 **************************************/
@@ -1304,6 +1355,69 @@ button.pay-button {
   text-transform: uppercase;
   font-size: 11px;
  }
+/**************************************
+Events
+**************************************/
+.nav-tabs-custom { border-bottom: none; margin-left: 20px; }
+.tab-content-custom { border-top: 1px solid #ddd; }
+.nav-tabs-custom > li.active > a { color: #0098d1; }
+.nav-tabs-custom > li > a { color: #D4D4D4; border-radius: 0; }
+.nav-tabs-custom > li > a:hover { color: #0086c7 !important; border-bottom: 0; }
+.nav-tabs-custom > li { margin-bottom: 0; }
+.table-custom-event > tbody > tr { background-color: #f9f9f9; }
+.table-custom-event > tbody > tr:nth-of-type(odd) {
+  background-color: #fff;
+}
+.table-custom-event > thead > tr > th {
+  border-bottom  : none;
+  padding-top    : 15px;
+  padding-bottom : 15px;
+  font-size      : 13px;
+  text-align     : center;
+  text-transform : uppercase;
+}
+.table-custom-event > tbody > tr > td {
+  color          : #737373;
+  border-top     : none;
+  font-size      : 13px;
+  font-weight    : 500;
+  text-align     : center;
+  text-transform : uppercase;
+}
+.tce-head { background-color: #F2F7FC; }
+.tce-head th { color: #0098d1; font-weight: 500; }
+.btn-more-events, .btn-cancelar {
+  width            : 100px;
+  padding          : 2px 0;
+  color            : #fff;
+  border-radius    : 25px;
+  font-size        : 12px;
+  font-weight      : 300;
+  text-transform   : uppercase;
+  background-color : #B1B1B1;
+}
+.btn-cancelar { width: 100%; padding: 3px 0; }
+.row-top { margin-top: 15px; }
+.cmb-policies { color: #222; font-size: 11px; font-weight: 500; }
+.text-normal { text-transform: none; }
+.fg-policies .cmb-text-1 { height: auto; }
+.background-bluelight2 {
+  padding-top    : 15px;
+  padding-bottom : 15px;
+  padding-left   : 0;
+  padding-right  : 0;
+}
+.dpdwn-margin { margin-top: 15px; margin-bottom: 15px; }
+.dropdown-custom .btn-default {
+  border         : none;
+  padding        : 0;
+  vertical-align : 0;
+  margin-left    : 15px;
+  text-transform: uppercase;
+}
+.dropdown-custom .btn-default:hover { background-color: transparent; }
+.dropdown-custom .dropdown-menu { left: auto; right: 0; }
+.panel-default-comments .panel-body { padding: 0; }
 /**************************************
 medias
 **************************************/
@@ -1405,6 +1519,14 @@ medias
   .header-container.change-responsive { height: 125px; }
   .comment-container { height: 300px; }
   .provider-carousel-img div[class*="slider-img"] { background-size: 150%; }
+  .row-event-mobile { margin-left: 15px; margin-right: 15px; }
+  .row-event-mobile-m2 { margin-left: 0; margin-right: 0; }
+  .ntce-m2 { margin-left: 0; }
+  .norow-mobile { margin-left: -15px; margin-right: -15px; }
+  .col-xs-custom-events {
+    width: 33.33333333%; /*col-xs-4*/
+    margin-left: 66.66666667%; /*col-xs-offset-8*/
+  }
 }
 @media(max-width: 650px) {
 	[class="col-sm-4 text-center prod-search"],
@@ -1424,6 +1546,7 @@ medias
   .text-slider      { margin-bottom: 0; }
   .carousel-caption { height: 350px; }
   .provider-carousel-img div[class*="slider-img"] { background-size: 200%; }
+  .col-xs-custom-events { width: 100%; margin-left: 0; margin-bottom: 15px; }
 }
 @media(max-width: 475px) {
 	[class="col-sm-4 text-center prod-search"],
