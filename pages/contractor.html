@@ -188,37 +188,225 @@
             </div>
             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body">
-                <div class="col-md-4 margin-top50">
-                  <h6 class="color-azul">NOMBRE DEL CONTRATANTE</h6>
-                  <h4 class="color-gris">ISSAC ROJO</h4>
-                  <h6 class="color-azul">GARANTÍAS DE IDENTIDAD</h6>
-                  <h4 class="color-gris">NO</h4>
-                </div>
-                <div class="col-md-4 margin-top50">
-                  <h6 class="color-azul">REFERENCIAS</h6>
-                  <h4 class="color-gris">NO</h4>
-                  <h6 class="color-azul">GARANTÍAS DE ASESOR</h6>
-                  <h4 class="color-gris">NO</h4>
-                </div>
-                <div class="col-md-4 margin-top50">
-                  <div class="col-md-6 contractor-rate">
-                   <h4 class="color-azul">valoración</h4>
-                  </div>
-                  <div class="col-md-6 contractor-stars">
-                    <select id="rate-product-in1">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                    </select>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="comments">
-                        <h6 class="color-azul">COMENTARIOS:</h6>
-                        <p class="color-gris">SIN COMENTARIOS</p>
+                <div class="col-sm-12">
+                  <div class="row ic-form-group">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <div class="concept">
+                          <h3>Nombre del contratante:</h3>
+                        </div>
+                        <div class="description-concept">
+                          <p>Isaac Rojo</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <div class="concept">
+                          <h3>Referencias</h3>
+                        </div>
+                        <div class="description-concept">
+                          <p>No</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <div class="concept">
+                          <h3>Garantías de identidad</h3>
+                        </div>
+                        <div class="description-concept">
+                          <p>No</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <div class="concept">
+                          <h3>Garantías por asesor</h3>
+                        </div>
+                        <div class="description-concept">
+                          <p>No</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading-barrating">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#bar-ratting-panel" aria-expanded="true" aria-controls="bar-ratting-panel">
+                  <i class="fa fa-angle-right"></i>Valoración
+                </a>
+              </h4>
+            </div>
+            <div id="bar-ratting-panel" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-barrating">
+              <div class="panel-body">
+                <div class='col-md-12 msg-ratting color-bluelight contractor-stars text-center'>
+                  <div class='relativer'>
+                    <select id='rate-product-in1'>
+                      <option value='1'>1</option>
+                      <option value='2'>2</option>
+                      <option value='3'>3</option>
+                      <option value='4'>4</option>
+                      <option value='5'>5</option>
+                    </select>
+                    <span class='cc-rs-val'>4.0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="panel panel-default panel-default-comments">
+            <div class="panel-heading" role="tab" id="headingComments">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#panel-comments" aria-expanded="false" aria-controls="panel-comments">
+                  <i class="fa fa-angle-right"></i>Comentarios
+                </a>
+              </h4>
+            </div>
+            <div id="panel-comments" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingComments">
+              <div class="panel-body">
+                <div class="comment-container">
+                  <!-- MSG01 -->
+                  <div class='cc-msg'>
+                    <div class='row cc-msg-header'>
+                      <div class='col-sm-4 msg-author'>
+                        <div class='row'>
+                          <div class='col-sm-12'>
+                            <span class='color-gris-fuerte-2'>Por</span>
+                            <span class='color-negro text-uppercase'>Mauricio</span>
+                          </div>
+                          <div class='col-sm-12'>
+                            <span class='color-gris-fuerte-2'>de</span>
+                            <span class='color-negro'>Ciudad de México</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='col-sm-4 msg-ratting color-bluelight'>
+                        <div class='relativer'>
+                          <select id='cc-ratting-stars-msg001'>
+                            <option value='1'>1</option>
+                            <option value='2'>2</option>
+                            <option value='3'>3</option>
+                            <option value='4'>4</option>
+                            <option value='5'>5</option>
+                          </select>
+                          <span class='cc-rs-val'>4.0</span>
+                        </div>
+                      </div>
+
+                      <div class='col-sm-4 msg-date'>
+                        <span class='color-gris-fuerte-2'>5/11/2016</span>
+                      </div>
+                    </div>
+
+                    <div class='row cc-msg-body'>
+                      <div class='col-sm-12 color-gris-fuerte-2 text-justify'>
+                        <strong>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ratione amet quos fugiat expedita corporis maxime, doloremque qui incidunt facilis consequuntur, laudantium numquam assumenda? Nihil, corrupti! Fuga quisquam laudantium, eos.
+                        </strong>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- MSG01  -->
+
+                  <!-- MSG02 -->
+                  <div class='cc-msg'>
+                    <div class='row cc-msg-header'>
+                      <div class='col-sm-4 msg-author'>
+                        <div class='row'>
+                          <div class='col-sm-12'>
+                            <span class='color-gris-fuerte-2'>Por</span>
+                            <span class='color-negro text-uppercase'>Mauricio</span>
+                          </div>
+                          <div class='col-sm-12'>
+                            <span class='color-gris-fuerte-2'>de</span>
+                            <span class='color-negro'>Ciudad de México</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='col-sm-4 msg-ratting color-bluelight'>
+                        <div class='relativer'>
+                          <select id='cc-ratting-stars-msg002'>
+                            <option value='1'>1</option>
+                            <option value='2'>2</option>
+                            <option value='3'>3</option>
+                            <option value='4'>4</option>
+                            <option value='5'>5</option>
+                          </select>
+                          <span class='cc-rs-val'>4.0</span>
+                        </div>
+                      </div>
+
+                      <div class='col-sm-4 msg-date'>
+                        <span class='color-gris-fuerte-2'>5/11/2016</span>
+                      </div>
+                    </div>
+
+                    <div class='row cc-msg-body'>
+                      <div class='col-sm-12 color-gris-fuerte-2 text-justify'>
+                        <strong>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ratione amet quos fugiat expedita corporis maxime, doloremque qui incidunt facilis consequuntur, laudantium numquam assumenda? Nihil, corrupti! Fuga quisquam laudantium, eos.
+                        </strong>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- MSG02  -->
+
+                  <!-- MSG03 -->
+                  <div class='cc-msg'>
+                    <div class='row cc-msg-header'>
+                      <div class='col-sm-4 msg-author'>
+                        <div class='row'>
+                          <div class='col-sm-12'>
+                            <span class='color-gris-fuerte-2'>Por</span>
+                            <span class='color-negro text-uppercase'>Mauricio</span>
+                          </div>
+                          <div class='col-sm-12'>
+                            <span class='color-gris-fuerte-2'>de</span>
+                            <span class='color-negro'>Ciudad de México</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='col-sm-4 msg-ratting color-bluelight'>
+                        <div class='relativer'>
+                          <select id='cc-ratting-stars-msg003'>
+                            <option value='1'>1</option>
+                            <option value='2'>2</option>
+                            <option value='3'>3</option>
+                            <option value='4'>4</option>
+                            <option value='5'>5</option>
+                          </select>
+                          <span class='cc-rs-val'>4.0</span>
+                        </div>
+                      </div>
+
+                      <div class='col-sm-4 msg-date'>
+                        <span class='color-gris-fuerte-2'>5/11/2016</span>
+                      </div>
+                    </div>
+
+                    <div class='row cc-msg-body'>
+                      <div class='col-sm-12 color-gris-fuerte-2 text-justify'>
+                        <strong>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ratione amet quos fugiat expedita corporis maxime, doloremque qui incidunt facilis consequuntur, laudantium numquam assumenda? Nihil, corrupti! Fuga quisquam laudantium, eos.
+                        </strong>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- MSG03  -->
                 </div>
               </div>
             </div>
@@ -237,66 +425,108 @@
               <div class="panel-body">
                 <div class="col-md-12">
                   <h4 class="gris-title">REGISTRAR GARANTÍAS AUMENTA LA CREDIBILIDAD DE TU PERFIL Y LA CONFIANZA HACIA EL PROFESIONAL DE SERVICIOS</h4>
-                  <h6 class="color-gris">PARA ACEPTAR UN EVENTO ALGUNOS ARTISTAS VERIFICAN TUS DATOS POR SEGURIDAD, A ESTO LE LLAMAMOS GARANTÍA DE IDENTIDAD, ESTAS GARANTÍAS AUMENTAN LA POSIBILIDAD DE ACEPTACIÓN DE TU EVENTO, PUEDES DEJAR 3 TIPOS DE GARANTÍAS.</h6>
-                  <h6 class="color-gris">1. INE O IFE ES LA FOTO O IMAGEN DE LA PARTE FRONTAL DE TU CREDENCIAL DE ELECTOR.</h6>
-                  <h6 class="color-gris">2. REFERENCIA PERSONAL ES LA SOLICITUD DE VALIDACIÓN POR PARTE DE UN CONTRATANTE O PROFESIONAL DE SERVICIOS QUE CONOZCAS.</h6>
-                  <h6 class="color-gris">3. VALIDACIÓN DE UN ASESOR DE CALIDAD ES LA VERIFICACIÓN DE LOS DATOS POR ALGÚN ASESOR DE CALIDAD QUE CONOZCAS, EL ASESOR SE PONDRÁ EN CONTACTO CONTIGO VÍA CORREO ELECTRÓNICO PARA AGENDAR UNA CITA.</h6>
+                  <h6 class="color-gris-fuerte-2">PARA ACEPTAR UN EVENTO ALGUNOS ARTISTAS VERIFICAN TUS DATOS POR SEGURIDAD, A ESTO LE LLAMAMOS GARANTÍA DE IDENTIDAD, ESTAS GARANTÍAS AUMENTAN LA POSIBILIDAD DE ACEPTACIÓN DE TU EVENTO, PUEDES DEJAR 3 TIPOS DE GARANTÍAS.</h6>
+                  <h6 class="color-gris-fuerte-2">1. INE O IFE ES LA FOTO O IMAGEN DE LA PARTE FRONTAL DE TU CREDENCIAL DE ELECTOR.</h6>
+                  <h6 class="color-gris-fuerte-2">2. REFERENCIA PERSONAL ES LA SOLICITUD DE VALIDACIÓN POR PARTE DE UN CONTRATANTE O PROFESIONAL DE SERVICIOS QUE CONOZCAS.</h6>
+                  <h6 class="color-gris-fuerte-2">3. VALIDACIÓN DE UN ASESOR DE CALIDAD ES LA VERIFICACIÓN DE LOS DATOS POR ALGÚN ASESOR DE CALIDAD QUE CONOZCAS, EL ASESOR SE PONDRÁ EN CONTACTO CONTIGO VÍA CORREO ELECTRÓNICO PARA AGENDAR UNA CITA.</h6>
                 </div>
-                <div class="same-buttoner-width">
-                  <div class="col-md-4 margin-top15 text-center margin-bottom50">
-                    <button class="btn btn-gray">SEGUIR CONTRATANDO</button>
+                <div class="col-md-12 concept margin-top15">
+                  <h3>Garantías de identidad previas</h3>
+                  <div class="table-responsive">
+                    <table class="table table-striped table-warranty">
+                      <thead class="color-gris-fuerte-2">
+                        <tr>
+                          <th>Documento</th>
+                          <th>Fecha previa</th>
+                          <th>Acción</th>
+                        </tr>
+                      </thead>
+                      <tbody class="color-gris-fuerte-2">
+                        <tr>
+                          <td>Lorem ipsum</td>
+                          <td>Lorem ipsum</td>
+                          <td>
+                            <button type="button" class="btn btn-ver">Ver</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Lorem ipsum</td>
+                          <td>Lorem ipsum</td>
+                          <td>
+                            <button type="button" class="btn btn-ver">Ver</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Lorem ipsum</td>
+                          <td>Lorem ipsum</td>
+                          <td>
+                            <button type="button" class="btn btn-ver">Ver</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
-                  <div class="col-md-4 margin-top15 text-center margin-bottom50">
-                    <button class="btn btn-gray">ADJUNTAR INE</button>
-                  </div>
-                  <div class="col-md-4 margin-top15 text-center margin-bottom50">
-                    <button class="btn btn-gray">REFERENCIAS PERSONALES</button>
-                  </div>
                 </div>
-                <div class="col-md-5 col-md-offset-1 form-group">
-                  <h5 class="color-azul">SOLICITAR ASESOR</h5>
-                  <label class="color-gris">*ASESOR</label>
-                  <input type="text" name="asesor" class="form-control form-contractor">
-                </div>
-                <div class="col-md-4 col-md-offset-1 text-center margin-top60">
-                  <input type="submit" name="enviar" value="ACEPTAR Y ENVIAR" class="btn btn-contractor">
-                </div>
-              </div>
-            </div>
-          </div>
 
-
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingThree">
-              <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                  <i class="fa fa-angle-right"></i>documentos
-                </a>
-              </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-              <div class="panel-body">
                 <div class="col-md-12">
-                  <h4 class="gris-title">
-                    REGISTRAR GARANTÍAS AUMENTA LA CREDIBILIDAD DE TU PERFIL Y LA CONFIANZA HACIA EL PROFESIONAL DE SERVICIOS
-                  </h4>
+                  <hr class="warranty-hr">
+                </div>
+
+                <div class="col-md-12 warranty-form-1">
+                  <!-- row -->
+                  <div class="row">
+                    <!-- col-sm-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <div class="relativer w-search-icon">
+                          <input type="text" class="form-control"
+                                 placeholder="Adjuntar INE o IFE*">
+                          <i class="fa fa-search"></i>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <div class="relativer w-search-icon">
+                          <input type="text" class="form-control"
+                                 placeholder="Adjuntar Comprobante de Domicilio*">
+                          <i class="fa fa-search"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-sm-6 -->
+
+                    <!-- col-sm-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input type="text"
+                               class="form-control fc-hidden cmb-label color-bluelight"
+                               disabled="" 
+                               value="Solicitar asesor">
+                      </div>
+
+                      <div class="form-group">
+                        <input type="text" class="form-control"
+                               placeholder="ASESOR*">
+                      </div>
+                    </div>
+                    <!-- col-sm-6 -->
+                    
+                    <!-- button row -->
+                    <div class="same-buttoner-width">
+                      <div class="col-md-4 margin-top15 text-center margin-bottom50">
+                        <button class="btn btn-gray">SEGUIR CONTRATANDO</button>
+                      </div>
+                      <div class="col-md-4 margin-top15 text-center margin-bottom50">
+                        <button class="btn btn-gray">REFERENCIAS PERSONALES</button>
+                      </div>
+                      <div class="col-md-4 margin-top15 text-center margin-bottom50">
+                        <button class="btn btn-contractor">ENVIAR</button>
+                      </div>
+                    </div>
+                    <!-- button row -->
                   </div>
-                  <form action="#">
-                    <div class="col-md-6 col-md-offset-3 form-group">
-                      <input type="text" name="ine" class="form-control form-contractor" placeholder="Subir INE *">
-                      <span class="icon-input search-icon">
-                      <i class="fa fa-search"></i>
-                    </span>
-                    </div>
-                    <div class="col-md-6 col-md-offset-3 form-group">
-                      <input type="text" name="comprobante" class="form-control form-contractor" placeholder="Subir Comprobante de Domicilio*">
-                      <span class="icon-input search-icon">
-                      <i class="fa fa-search"></i>
-                    </span>
-                    </div>
-                    <div class="col-md-4 col-md-offset-4 form-group text-center">
-                      <input type="submit" name="enviar" class="btn btn-contractor" value="ENVIAR">
-                    </div>
+                  <!-- row -->
+                </div>
               </div>
             </div>
           </div>
@@ -645,13 +875,23 @@
 
 
   <script>
-    $("#myModal").modal("show");
+    //$("#myModal").modal("show");
 
     $("[target-select]").click(function(e) {
       var cual = $(this).attr("target-select");
 
       $("#"+cual+"").focus();
     });
+
+
+
+    for( var i=1; i<=3; i++ ) {
+      $('#cc-ratting-stars-msg00'+i).barrating({
+        theme: 'fontawesome-stars-o',
+        initialRating: 4,
+        readonly: true
+      });
+    }
 
     $(".date-form").datepicker();
     $(".date-icon").click(function(e) {
