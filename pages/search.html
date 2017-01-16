@@ -1096,12 +1096,9 @@ $(".gen-checkbox").click(function(){
   /* Fin Rating */
 
   /* Efecto circle-filter */
-  $(".circlef-container label").click(function(){
-    $(this).prev().trigger("click");
-  });
   $(".circle-filter").click(function(){
     if($(this).find(".opaciter").attr("class")=="opaciter active") {
-      $(this).find(".opaciter").attr("class","opaciter active");
+      $(this).find(".opaciter").attr("class","opaciter");
       $(this).next().attr("class","");
       return;
     }
