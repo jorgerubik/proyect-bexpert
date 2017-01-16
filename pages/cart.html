@@ -115,7 +115,7 @@
                     <button class="btn btn-default floatr btn1">BORRAR</button>
                   </div>
                   <div class="col-sm-4">
-                    <button class="btn btn-default btn2">ENVIAR SOLICITUD</button>
+                    <button class="btn btn-default btn2" data-toggle="modal" data-target="#request-modal" data-dismiss="modal" aria-label="Close">ENVIAR SOLICITUD</button>
                   </div>
                 </div>
               </div>
@@ -123,10 +123,299 @@
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
       </div><!-- /.modal -->
-<!-- Header -->
+      <!-- Modal -->
+  <div class="modal fade" id="request-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content home-modal">
+          <button type="button" class="close close-thisModal" data-dismiss="modal" aria-label="Close">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+            </span>
+          </button>
+        <div class="modal-body" id="modal-body">
+        <div class="row c-modal-marginer main-modal">
+          <div class="col-md-12 text-center modal-left-container">
+            <div class="color-bluehard cm-title">Datos de tu evento</div>
+            <div class="cm-body cm-form-group">
+              <div class="row">
+                <!-- ROW 1 -->
+                <div class="col-sm-12 text-left">
+                  <div class="row">
+                    <!-- COL-SM-8 -->
+                    <div class="col-sm-8">
+                      <div class="row">
+                        <!-- COL-SM-12 -->
+                        <div class="col-sm-12">
+                          <div class="row">
+                            <!-- COL-SM-6 -->
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="cmb-label color-bluelight" for="">
+                                  Usuario:
+                                </label>
+                                <div class="color-gris-fuerte-2 cmb-text-1">
+                                  Issac Rojo
+                                </div>
+                              </div>
+                            </div>
+                            <!-- COL-SM-6 -->
+
+                            <!-- COL-SM-6 -->
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="cmb-label color-bluelight" for="">
+                                  Fecha:
+                                </label>
+                                <div class="relativer">
+                                  <input type="text" class="form-control date-form" value="21/01/2017" readonly="">
+                                  <div class="date-icon"><i class="fa fa-calendar"></i></div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- COL-SM-6 -->
+                          </div>
+                        </div>
+                        <!-- COL-SM-12 -->
+
+                        <!-- COL-SM-12 -->
+                        <div class="col-sm-12">
+                          <div class="row">
+                            <!-- COL-SM-6 -->
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="cmb-label color-bluelight" for="">
+                                  Hora inicio:
+                                </label>
+                                <div class="relativer">
+                                  <input type="text" class="form-control" value="13:00">
+                                  <div class="arrow-up">
+                                    <i class="fa fa-angle-up"></i>
+                                  </div>
+                                  <div class="arrow-down">
+                                    <i class="fa fa-angle-down"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- COL-SM-6 -->
+
+                            <!-- COL-SM-6 -->
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="cmb-label color-bluelight" for="">
+                                  Minutos:
+                                </label>
+                                <div class="relativer">
+                                  <input type="text" class="form-control" value="13:00">
+                                  <div class="arrow-up">
+                                    <i class="fa fa-angle-up"></i>
+                                  </div>
+                                  <div class="arrow-down">
+                                    <i class="fa fa-angle-down"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- COL-SM-6 -->
+                          </div>
+                        </div>
+                        <!-- COL-SM-12 -->
+
+                        <!-- COL-SM-12 -->
+                        <div class="col-sm-12">
+                          <div class="row">
+                            <!-- COL-SM-6 -->
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="cmb-label color-bluelight" for="">
+                                  Hora fin:
+                                </label>
+                                <div class="relativer">
+                                  <input type="text" class="form-control" value="14:00">
+                                  <div class="arrow-up">
+                                    <i class="fa fa-angle-up"></i>
+                                  </div>
+                                  <div class="arrow-down">
+                                    <i class="fa fa-angle-down"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- COL-SM-6 -->
+
+                            <!-- COL-SM-6 -->
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="cmb-label color-bluelight" for="">
+                                  Minutos:
+                                </label>
+                                <div class="relativer">
+                                  <input type="text" class="form-control" value="14:00">
+                                  <div class="arrow-up">
+                                    <i class="fa fa-angle-up"></i>
+                                  </div>
+                                  <div class="arrow-down">
+                                    <i class="fa fa-angle-down"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- COL-SM-6 -->
+                          </div>
+                        </div>
+                        <!-- COL-SM-12 -->
+                      </div>
+                    </div>
+                    <!-- COL-SM-8 -->
+
+                    <!-- COL-SM-4 -->
+                    <div class="col-sm-4">
+                      <div class="row">
+                        <!-- COL-SM-12 -->
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label class="cmb-label color-bluelight" for="">
+                              Tarifa por hora:
+                            </label>
+                            <div class="color-gris-fuerte-2 cmb-text-1">
+                              $ 5.00
+                            </div>
+                          </div>
+                        </div>
+                        <!-- COL-SM-12 -->
+
+                        <!-- COL-SM-12 -->
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label class="cmb-label color-bluelight" for="">
+                              Costo de evento:
+                            </label>
+                            <div class="color-gris-fuerte-2 cmb-text-1">
+                              $ 5.00
+                            </div>
+                          </div>
+                        </div>
+                        <!-- COL-SM-12 -->
+
+                        <!-- COL-SM-12 -->
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label class="cmb-label color-bluelight" for="">
+                              IVA:
+                            </label>
+                            <div class="color-gris-fuerte-2 cmb-text-1">
+                              $ 0.80
+                            </div>
+                          </div>
+                        </div>
+                        <!-- COL-SM-12 -->
+                      </div>
+                    </div>
+                    <!-- COL-SM-4 -->
+                  </div>
+                </div>
+                <!-- ROW 1 -->
+              </div> <!-- row -->
+
+              <div class="row row-price">
+                <div class="col-sm-12">
+                  <div class="pull-right">
+                    <div class="color-bluehard cmb-label">
+                      <span class="cmb-ct-text">Costo total:</span>
+                      <span class="cmb-ct-price">$5. 80</span>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- row -->
+
+              <div class="row cm-form-control">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control"
+                           placeholder="*Nombre del evento:">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control cmb-textarea" rows="6"
+                              placeholder="*Descripción del evento"></textarea>
+                  </div>
+                  <div class="form-group relativer">
+                    <select id="tevento" class="form-control" required>
+                      <option value="0" disabled selected hidden>*Tipo de evento</option>
+                      <option value="0">Evento 0</option>
+                      <option value="1">Evento 1</option>
+                      <option value="2">Evento 2</option>
+                    </select>
+                    <div class="select-arrow" target-select="tevento">
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <div class="form-group relativer">
+                    <select id="sel-estado" class="form-control" required>
+                      <option value="0" disabled selected hidden>*Estado</option>
+                      <option value="0">Estado 0</option>
+                      <option value="1">Estado 1</option>
+                      <option value="2">Estado 2</option>
+                    </select>
+                    <div class="select-arrow" target-select="sel-estado">
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- COL-SM-6 -->
+
+                <!-- COL-SM-6 -->
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control"
+                           placeholder="Domicilio">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control"
+                           placeholder="Municipio">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control"
+                           placeholder="Código postal">
+                  </div>
+                  <div class="form-group relativer">
+                    <select id="sel-colonia" class="form-control" required>
+                      <option value="0" disabled selected hidden>*Colonia</option>
+                      <option value="0">Colonia 0</option>
+                      <option value="1">Colonia 1</option>
+                      <option value="2">Colonia 2</option>
+                    </select>
+                    <div class="select-arrow" target-select="sel-colonia">
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control cmb-textarea" rows="3"
+                              placeholder="*Referencias de domicilio"></textarea>
+                  </div>
+                </div>
+                <!-- COL-SM-6 -->
+              </div> <!-- row -->
+
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <div class="row col-sm-4 col-sm-offset-4">
+                    <button type="button" class="btn-solicitar text-uppercase">Solicitar evento</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  <!-- Modal -->
 <div class="main-panel">
-  <div class="container-fluid">
-      <div class="row header-container change-responsive">
+<div class="container-fluid">
+  <div class="col-md-12">
+  <div class="row header-container change-responsive">
     <div class="col-md-3">
       <img src="../resources/img/logo-42.svg" class="logo">
     </div>
@@ -153,17 +442,9 @@
       </div>
     </div>
   </div>
-  </div>
-</div>
-<!-- Fin Header -->
-<div class="main-panel">
-<div class="container-fluid">
-  <div class="col-md-12">
     <div class="row">
       <!-- aside-left -->
       <aside class="col-md-3 provider-left">
-
-        <!-- Input de busqueda -->
         <form>
           <div class="form-group search-input">
             <input type="text" class="form-control input-gen search-gen" placeholder="BUSCAR...">
@@ -172,29 +453,56 @@
             </span>
           </div>
         </form>
-        <!-- Input de busqueda -->
-
-        <!-- box shadow -->
-        <div class="row pl-shadow">
-
-          <!--Circle-container-->
-          <div class="row circles-container">
-            <div class="col-sm-12 circlef-container">
-              <div class="circle-filter">
-                <div class="opaciter"></div>
-                <img src="../resources/img/search-circle/01.jpg" alt="">
+        <div class="lateral-provider">
+          <div class="fs-section">
+            <div class="row padding-tb30">
+              <div class="margin-type filter-content">
+                <div class="circles-container">
+                  <div class="col-sm-12 circlef-container">
+                    <div class="circle-filter">
+                      <div class="opaciter"></div>
+                      <img src="../resources/img/search-circle/01.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="provider-social text-center">
+                  <a href="">
+                    <span class="fa-stack fa-lg facebook-icon">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                  <a href="">
+                    <span class="fa-stack fa-lg youtube-icon">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                  <a href="#">
+                    <span class="fa-stack fa-lg instagram-icon">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                  <a href="#">
+                    <span class="fa-stack fa-lg internet-icon">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          <!--Fin Circle-container-->
-
-          <div class="service-provider text-center">
-            <div class="panel-blue text-center">
-              <h4>usuario</h4>
+          <div class="fs-section">
+            <div class="fs-filter-title"><span>nombre</span></div>
+            <div class="margin-type filter-content">
+              <div class="prov-des">
+                <h3>grupo galante</h3>
+              </div>
             </div>
-            <h5 class="non-hover-t">isaac rojo</h5>
           </div>
-        </div> <!-- box shadow -->
+        </div>
 
         <div class="row back-provider">
           <span>
@@ -485,17 +793,16 @@
         </div>
       </aside>
       <!-- Fin aside-right -->
-
-      <!-- Footer -->
-      <div class="row footer-container">
-        <div class="col-md-7 col-md-offset-5 footer-links-container">
-            <a class="copy-footer" href="#">
-              <h4>Copyright &copy; 2017, Condor Consulting Services. All rights reserved.</h4>
-            </a>
-        </div>
-      </div>
-      <!-- Fin Footer -->
     </div>
+        <!-- Footer -->
+    <div class="row footer-container">
+      <div class="col-md-7 col-md-offset-5 footer-links-container">
+          <a class="copy-footer" href="#">
+            <h4>Copyright &copy; 2017, Condor Consulting Services. All rights reserved.</h4>
+          </a>
+      </div>
+    </div>
+    <!-- Fin Footer -->
   </div>
 </div>
 </div>
