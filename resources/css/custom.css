@@ -109,7 +109,6 @@ select::-ms-expand { display: none; }
 .ui-timepicker-standard { height: 212px !important; }
 .ui-datepicker th { background: #e6f2ff; }
 .ui-datepicker table { background: white; }
-.acordeon-search { border-top: 2px solid #e6e6e6; }
 .nopadding-left { padding-left: 0 !important; }
 .nopadding-right { padding-right: 0 !important; }
 .nopadding-left-right { padding-left: 0 !important; padding-right: 0 !important; }
@@ -920,9 +919,9 @@ Provider-profile
 	min-height : 112px;
 }
 .provider-all-container { margin-bottom: 10%; }
-.provider-cont.active { display: inline; }
+.provider-cont.active { display: inline; margin: 0; }
 .provider-cont { display: none; }
-.table-repertorio { height: 324px; }
+.table-repertorio { height: 550px; }
 .table-repertorio .table * {
 	text-align: center;
 	border: none;
@@ -1006,6 +1005,7 @@ Provider-profile
   color: #fff;
   border-radius: 30px;
   letter-spacing: 3px;
+  margin-bottom: 45px;
 }
 .contrats-container button:active { background: #00469a; color: white; }
 .contrats-container button:hover { background: #00469a; color: white; }
